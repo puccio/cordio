@@ -650,6 +650,88 @@ h2 {
         font-style: normal;
         text-decoration: underline;
     }
+
+    #footer {
+        background-color: #000;
+        height: 375px;
+        margin-top: 200px;
+        font-family:LibreFranklin-Regular;
+        font-size:16px;
+        color:#fafafa;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 200px;
+        padding: 0px;
+    }
+
+    #footer .footer-content {
+        max-width: 1440px;
+
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer .footer-content ul li a {
+        text-decoration: none;
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    #footer .footer-content ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #footer .footer-content .footer-content-title {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        letter-spacing: 2.1px;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    #footer .footer-content .footer-content-sections {
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer .footer-content .footer-content-sections ul {
+        padding: 0;
+        margin-top: 16px;
+        list-style-type: none;
+    }
+
+    #footer .footer-content .footer-content-timetables {
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer .footer-content-bottom {
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    #footer .footer-content-bottom a {
+        text-decoration: none;
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -1045,6 +1127,7 @@ h2 {
         font-size: 11px;
         letter-spacing: 0;
         line-height: 22px;
+        margin-right: 20px;
     }
 
 }
