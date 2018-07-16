@@ -1033,6 +1033,7 @@ h2 {
     }
 
     #footer .footer-content-bottom {
+        padding: 0;
         margin-top: 60px;
     }
 
@@ -1044,7 +1045,6 @@ h2 {
         font-size: 11px;
         letter-spacing: 0;
         line-height: 22px;
-        margin-right: 40px;
     }
 
 }
