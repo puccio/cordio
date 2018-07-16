@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Charset Attribute -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Inluding bootstrap -->
         <link rel="stylesheet" href="css/bootstrap_original.css">
         <!-- Class Overwrite -->
@@ -10,61 +13,278 @@
         <script src="js/bootstrap.bundle.js"></script>
         <!-- Including Masonry for Cascading grid layout library  -->
         <script src="js/masonry.pkgd.min.js"></script>
+        <!-- JS Custom -->
+        <script src="js/script.js"></script>
         <!-- Title -->
         <title>Museo Nino Cordio</title>
     </head>
     <body>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">MUSEO NINO CORDIO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">MUSEO NINO CORDIO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
           
-          <div id="navbarNavDropdown" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="galleria.html">Galleria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="biografia.html">Biografia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="piccoli.html">Per i pi&ugrave; piccoli</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="testimonianze.html">Testimonianze</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item language">
-                <span>IT</span>
-              </li>
-              <li class="nav-item sitemap">
-                <span></span>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Museo Nino Cordio di Santa Ninfa</h1>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>La collezione del Museo Nino Cordio di Santa Ninfa contiene quasi 200 opere.</h2>
-          </div>
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="galleria.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="biografia.html">Biografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="piccoli.html">Per i pi&ugrave; piccoli</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="testimonianze.html">Testimonianze</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                    <li class="nav-item language">
+                        <span>IT</span>
+                    </li>
+                    <li class="nav-item sitemap">
+                        <span></span>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+            <!-- Welcome Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Museo Nino Cordio di Santa Ninfa</h1>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>La collezione del Museo Nino Cordio di Santa Ninfa contiene quasi 200 opere.</h2>
+                </div>
+            </div>
+
+
+            <!-- Galleria Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">galleria</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div id="gallery" class="col-lg-12">
+                    <div class="grid">
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 170px;"></div>
+                                <div class="col-md-12 painting-container-title">Periferia romana</div>
+                                <div class="col-md-12 painting-container-year">1959</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 217px;"></div>
+                                <div class="col-md-12 painting-container-title">Primavera</div>
+                                <div class="col-md-12 painting-container-year">1959</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 278px;"></div>
+                                <div class="col-md-12 painting-container-title">Uccelli nel bosco</div>
+                                <div class="col-md-12 painting-container-year">1985</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 220px;"></div>
+                                <div class="col-md-12 painting-container-title">Figura seduta</div>
+                                <div class="col-md-12 painting-container-year">1978</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 271px;"></div>
+                                <div class="col-md-12 painting-container-title">Periferia romana</div>
+                                <div class="col-md-12 painting-container-year">1959</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 153px;"></div>
+                                <div class="col-md-12 painting-container-title">Periferia romana</div>
+                                <div class="col-md-12 painting-container-year">1959</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 151px;"></div>
+                                <div class="col-md-12 painting-container-title">Uccelli nel bosco</div>
+                                <div class="col-md-12 painting-container-year">1985</div>
+                            </div>
+                        </div>
+                        <div class="grid-item painting-container">
+                            <div class="row">
+                                <div class="col-md-12 painting-container-img" style="height: 161px;"></div>
+                                <div class="col-md-12 painting-container-title">Figura seduta</div>
+                                <div class="col-md-12 painting-container-year">1978</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="showmore" href="#">Mostra Tutto</a>
+            </div>
+
+
+            <!-- Biografia Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">biografia</h1>
+                </div>
+            </div>
+          
+            <div id="biography" class="row">
+            
+                <div class="col-lg-12 biography-container">
+                    <p class="biography-container-desc">
+                        <img class="biography-container-img">
+                        Le foto, recuperate dalla casa della nonna distrutta dal terremoto, riguardano gli anni della fanciullezza vissuta a Santa Ninfa con la madre, i due fratelli maggiori e il gemello Salvatore. Il padre, intanto, è prigioniero in Africa. Sono anni difficili, intensi e nello stesso tempo cari e carichi di emozioni e di sensazioni. Il momento è straordinario, il più significativo per la formazione dell'uomo e dell'artista. L'archeologia di Selinunte e Segesta che aleggia nel territorio circostante diventa magia. <br>
+                        Nel cortile domestico il gelso, la passiflora, il gelsomino e la vita stessa che spinge all'aperto, lo portano ad amare e osservare la natura che è prima di tutto colore.
+                        
+                    <br>
+                    <a href="#" class="readmore">Leggi tutto</a>
+                    </p>
+                </div>
+    
+            </div>
+
+
+            <!-- News Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">news</h1>
+                </div>
+            </div>
+        
+            <div id="news" class="row">
+                <div class="col-lg-12 news-containers">
+                    <div class="news-container">
+                    <div class="news-container-left">
+                        <div class="news-container-left-title">Premio Nino Cordio 2017</div>
+                        <div class="news-container-left-desc">A Santa Ninfa Sabato 2 dicembre la consegna al giornalista del Tg5. In programma la presentazione di «Non esiste più la Sicilia di una volta»</div>
+                        <div class="news-container-left-date">18 Mar 2017</div>
+                    </div>
+                    <div class="news-container-right">
+                        <img class="news-container-right-img">
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 news-containers">
+                    <div class="news-container">
+                    <div class="news-container-left">
+                        <div class="news-container-left-title">Premio Nino Cordio 2016</div>
+                        <div class="news-container-left-desc">Testo prova: A Santa Ninfa Sabato 2 dicembre la consegna al giornalista del Tg5. In programma la presentazione di «Non esiste più la Sicilia di una volta»</div>
+                        <div class="news-container-left-date">21 Mar 2016</div>
+                    </div>
+                    <div class="news-container-right">
+                        <img class="news-container-right-img">
+                    </div>
+                    </div>
+                </div>
+                <a class="showmore" href="#">Mostra Tutto</a>
+            </div>
+
+
+            <!-- Littleones Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">per i pi&ugrave; piccoli</h1>
+                </div>
+            </div>
+        
+            <div id="littleones" class="row">
+                <div class="col-lg-12 littleones-container">
+                    <p class="littleones-container-desc">
+                        <img class="littleones-container-img">
+                        Nato a Santa Ninfa, in provincia diTrapani, il 10 luglio 1937.
+                        <br><br>
+                        Ha studiato all'Istituto d'Arte di Catania e all'Accademia di Belle Arti di Roma. Successivamente ha frequentato l'Atelier di Friedländer a Parigi.
+                        <br><br>
+                        Ha insegnato presso il I Liceo Artistico di Roma e presso la International School of Art in Umbria.
+                        <br><br>
+                        Ha esposto i suoi lavori in numerose personali in Italia, 
+                        
+                        <br>
+                        <a href="#" class="readmore">Leggi tutto</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Testimonianze Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">testimonianze</h1>
+                </div>
+            </div>
+        
+            <div id="witnesses" class="row">
+                <div class="col-lg-12 witnesses-container">
+                    <p class="witnesses-container-desc">
+                        <img class="witnesses-container-img">
+                        Nato a Santa Ninfa, in provincia diTrapani, il 10 luglio 1937.
+                        <br><br>
+                        Ha studiato all'Istituto d'Arte di Catania e all'Accademia di Belle Arti di Roma. Successivamente ha frequentato l'Atelier di Friedländer a Parigi.
+                        <br><br>
+                        Ha insegnato presso il I Liceo Artistico di Roma e presso la International School of Art in Umbria.
+                        <br><br>
+                        Ha esposto i suoi lavori in numerose personali in Italia, 
+                        
+                        <br>
+                        <a href="#" class="readmore">Leggi tutto</a>
+                    </p>
+                </div>
+            </div>
+
+        
         </div>
 
-      </div>
+      <!-- <div class="row">
+        <div class="col-lg-12 footer">
+          museo nino Cordio
+          <div class="row">
+            <div class="col-lg-4">
+              Galleria
+              Biografia
+              News
+              Per i pi&ugrave; piccoli
+              Testimonianze
+            </div>
+            <div class="col-lg-4">
+              Mappa
+              Contatti
+            </div>
+            <div class="col-lg-4">
+              Orari:
+              del Martedì al Sabato
+              09:00 alle 13:00 - 15.30 alle 18.30
+
+              Indirizzo:
+              Piazzale Aldo Moro
+              91029 Santa Ninfa (Trapani)
+            </div>
+          </div>
+        </div>
+      </div> -->
+
     </body>
 </html>
