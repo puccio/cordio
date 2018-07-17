@@ -4,12 +4,6 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
-.grid-item {
-    width: 280px !important;
-    margin: 0px !important;
-    padding: 0px !important;
-}
-
 .row {
     margin: 0;
 }
@@ -56,6 +50,13 @@ h1.title {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+
+
+
+
+
 
 .navbar.bg-light {
     background-color: #fff !important;
@@ -181,7 +182,7 @@ h1.title {
 }
 
 #gallery .painting-container {
-    width: 220px;
+    width: 280px;
     background-color:#fff;
     margin-left: 0;
     margin-bottom: 40px;
