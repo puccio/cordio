@@ -54,6 +54,10 @@ h2 {
     padding-bottom: 11px;
 }
 
+.navbar.bg-light {
+    background-color: #fff !important;
+}
+
 .navbar .navbar-nav.navbar-nav-smallest {
     display: block;
 }
