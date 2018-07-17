@@ -22,38 +22,62 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">MUSEO NINO CORDIO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
             <div id="navbarNavDropdown" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="galleria.html">Galleria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="biografia.html">Biografia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="piccoli.html">Per i pi&ugrave; piccoli</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="testimonianze.html">Testimonianze</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="galleria.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="biografia.html">Biografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="piccoli.html">Per i pi&ugrave; piccoli</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="testimonianze.html">Testimonianze</a>
+                    </li>
                 </ul>
-                <ul class="navbar-nav">
-                <li class="nav-item language">
-                    <span>IT</span>
-                </li>
-                <li class="nav-item sitemap">
-                    <span></span>
-                </li>
+                <!-- Small devices, Medium devices -->
+                <ul class="navbar-nav navbar-nav-smallest">
+                    <li class="nav-item dropdown language">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lingua: IT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link" href="#">Lingua: EN</a>                        
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-smallest">
+                    <li class="nav-item sitemap">
+                        <a class="nav-link disabled" href="#">Mappa Museo</a>
+                    </li>
+                </ul>
+                <!-- Large devices, Extra large devices -->
+                <ul class="navbar-nav navbar-nav-biggest">
+                    <li class="nav-item dropdown language">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            IT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link" href="#">EN</a>                        
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-biggest">
+                    <li class="nav-item sitemap">
+                        <span></span>
+                    </li>
                 </ul>
             </div>
         </nav>
