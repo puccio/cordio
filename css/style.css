@@ -146,12 +146,15 @@ h2 {
     text-decoration: none;
 }
 
-.navbar-nav.navbar-nav.navbar-nav.navbar-nav-smallest .dropdown-menu {
-    border: 0px;
+.navbar-nav.navbar-nav-smallest .dropdown-menu {
+    border: 0;
+    padding-left: 1rem;
 }
 
-
-
+.navbar-nav.navbar-nav-biggest .dropdown-menu {
+    min-width: 0;
+    padding: 0.5rem;
+}
 
 
 
