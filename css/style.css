@@ -1096,12 +1096,15 @@ h1.title {
 
     .row {
         margin: 0;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
     #gallery {
         padding: 0;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 40px;
     }
 
     #gallery .painting-container {
@@ -1484,10 +1487,6 @@ h1.title {
         padding-left: 250px;
         padding-right: 250px;
         margin: 0;
-    }
-
-    #a {
-        height: 300px;
     }
 
     #gallery {
