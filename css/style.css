@@ -325,8 +325,7 @@ h1.title {
     letter-spacing: 0.3px;
     line-height: 18px;
 
-    position: absolute;
-    bottom: 0px;
+    margin-top: 18px;
 }
 
 #littleones {
