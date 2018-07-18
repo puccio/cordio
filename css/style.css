@@ -239,8 +239,8 @@ h1.title {
 }
 
 #biography .biography-container .biography-container-img {        
-    width: 280px;    
-    height: 172px;
+    width: 100%;
+    height: auto;
     color: #666666;
 
     margin-bottom: 20px;
@@ -339,8 +339,8 @@ h1.title {
 }
 
 #littleones .littleones-container .littleones-container-img {        
-    width: 280px;    
-    height: 172px;
+    width: 100%;
+    height: auto;
     color: #666666;
 
     margin-bottom: 20px;
@@ -383,8 +383,8 @@ h1.title {
 }
 
 #witnesses .witnesses-container .witnesses-container-img {
-    width: 280px;    
-    height: 172px;
+    width: 100%;
+    height: auto;
     color: #666666;
 
     margin-bottom: 20px;
