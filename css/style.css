@@ -4,6 +4,10 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
+.grid-item {
+    width: 100%;
+}
+
 .row {
     margin: 0;
 }
@@ -184,7 +188,7 @@ h1.title {
 }
 
 #gallery .painting-container {
-    width: 280px;
+    /* width: 280px; */
     background-color: #fff;
     margin-left: 0;
     margin-bottom: 40px;
@@ -459,6 +463,21 @@ h1.title {
     display: none;
 }
 
+@media (min-width: 576px) {
+    #gallery .painting-container {
+        width: calc(50% - 10px);
+        background-color: #fff;
+        margin-left: 0;
+        padding-right: 0px;
+        margin-bottom: 40px;
+        float: left;
+    }
+
+    #gallery .gutter-sizer {
+        width: 20px;
+    }
+}
+
 /* @media (min-width: 576px) {
 
     h1 {
@@ -691,11 +710,16 @@ h1.title {
     }
 
     #gallery .painting-container {
-        width: 220px;
-        background-color:#fff;
+        width: calc(33.3% - 13.3px);
+        background-color: #fff;
         margin-left: 0;
+        padding-right: 0px;
         margin-bottom: 40px;
         float: left;
+    }
+
+    #gallery .gutter-sizer {
+        width: 20px;
     }
 
     #gallery .painting-container .row {
@@ -1080,8 +1104,8 @@ h1.title {
     }
 
     .row {
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 34px;
+        padding-right: 34px;
         margin: 0;
     }
 
@@ -1093,11 +1117,16 @@ h1.title {
     }
 
     #gallery .painting-container {
-        width: 220px;
+        width: calc(25% - 15px);
         background-color: #fff;
         margin-left: 0;
+        padding-right: 0px;
         margin-bottom: 40px;
         float: left;
+    }
+
+    #gallery .gutter-sizer {
+        width: 20px;
     }
 
     #gallery .painting-container .row {
@@ -1480,11 +1509,16 @@ h1.title {
     }
 
     #gallery .painting-container {
-        width: 220px;
+        width: calc(25% - 15px);
         background-color: #fff;
         margin-left: 0;
+        padding-right: 0px;
         margin-bottom: 40px;
         float: left;
+    }
+
+    #gallery .gutter-sizer {
+        width: 20px;
     }
 
     #gallery .painting-container .row {
