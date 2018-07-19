@@ -4,10 +4,6 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
-.grid-item {
-    width: 100%;
-}
-
 .row {
     margin: 0;
 }
@@ -203,7 +199,8 @@ h1.title {
 #gallery .painting-container .row .painting-container-img {
     padding: 0;
     margin: 0;
-    background-color:#d8d8d8;
+    height: 100%;
+    object-fit: cover;
 }
 
 #gallery .painting-container .row .painting-container-title {
@@ -476,6 +473,13 @@ h1.title {
     #gallery .gutter-sizer {
         width: 20px;
     }
+
+    #gallery .painting-container .row .painting-container-img {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* @media (min-width: 576px) {
@@ -730,7 +734,8 @@ h1.title {
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
-        background-color:#d8d8d8;
+        height: 100%;
+        object-fit: cover;
     }
 
     #gallery .painting-container .row .painting-container-title {
@@ -1137,7 +1142,8 @@ h1.title {
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
-        background-color:#d8d8d8;
+        height: 100%;
+        object-fit: cover;
     }
 
     #gallery .painting-container .row .painting-container-title {
@@ -1529,7 +1535,8 @@ h1.title {
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
-        background-color:#d8d8d8;
+        height: 100%;
+        object-fit: cover;
     }
 
     #gallery .painting-container .row .painting-container-title {
