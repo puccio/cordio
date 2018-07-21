@@ -101,7 +101,8 @@ h1.title {
     text-decoration: none;
     font-weight: 700;
     font-style: normal;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #gallery-page .anchors a.anchor.active {
@@ -996,7 +997,8 @@ h1.title {
         text-decoration: none;
         font-weight: 700;
         font-style: normal;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #gallery-page .anchors a.anchor.active {
@@ -1456,7 +1458,8 @@ h1.title {
         text-decoration: none;
         font-weight: 700;
         font-style: normal;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #gallery-page .anchors a.anchor.active {
@@ -1906,7 +1909,8 @@ h1.title {
         text-decoration: none;
         font-weight: 700;
         font-style: normal;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #gallery-page .anchors a.anchor.active {
