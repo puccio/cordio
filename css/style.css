@@ -66,7 +66,6 @@ h2 {
     line-height: 18px;
     font-size: 14px;
     color: #666666;
-    letter-spacing: 0;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 0;
@@ -87,8 +86,8 @@ h1.title {
 
 #gallery-page .anchors {
     padding: 0;
-    margin-right: 34px;
-    margin-left: 34px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 60px;
     margin-bottom: 40px;
     text-align: center;
@@ -637,8 +636,8 @@ h1.title {
 
     #gallery {
         padding: 0;
-        margin-left: 34px;
-        margin-right: 34px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #gallery .painting-container {
@@ -956,13 +955,19 @@ h1.title {
         line-height: 18px;
         font-size: 14px;
         color: #666666;
-        letter-spacing: 0;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 0;
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 34px;
+        margin-right: 34px;
     }
 
     h1.title {
@@ -976,8 +981,8 @@ h1.title {
 
     #gallery-page .anchors {
         padding: 0;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 34px;
+        margin-right: 34px;
         margin-top: 60px;
         margin-bottom: 40px;
         text-align: center;
@@ -1412,13 +1417,17 @@ h1.title {
         line-height: 18px;
         font-size: 14px;
         color: #666666;
-        letter-spacing: 0;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 0;
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
     }
 
     h1.title {
@@ -1858,13 +1867,17 @@ h1.title {
         line-height: 18px;
         font-size: 14px;
         color: #666666;
-        letter-spacing: 0;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 0;
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
     }
 
     h1.title {
