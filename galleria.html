@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Inluding bootstrap -->
         <link rel="stylesheet" href="css/bootstrap_original.css">
+        <!-- Inluding Lightbox for Bootstrap css -->
+        <link rel="stylesheet" href="css/ekko-lightbox.css">
         <!-- Class Overwrite -->
         <link rel="stylesheet" href="css/style.css">
         <!-- jQuery library -->
@@ -13,6 +15,9 @@
         <script src="js/bootstrap.bundle.js"></script>
         <!-- Including Masonry for Cascading grid layout library  -->
         <script src="js/masonry.pkgd.min.js"></script>
+        <!-- Including Lightbox for Bootstrap  -->
+        <script src="js/ekko-lightbox.js"></script>
+        
         <!-- JS Custom -->
         <script src="js/script.js"></script>
         <!-- Title -->
@@ -84,12 +89,29 @@
 
         <hr class="hr-full-width">
 
-        <div class="container">
+        <div id="gallery-page" class="container">
             
             <!-- Galleria Section -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="title">galleria</h1>
+                    <h1>galleria</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 subtitle">
+                    <h2>La collezione del Museo Nino Cordio di Santa Ninga contiene quasi 200 opere.</h2>
+                </div>
+            </div>
+
+            <!-- Galleria Section -->
+            <div class="row">
+                <div class="col-lg-12 anchors">
+                    <a class="anchor active" href="#">tutti</a>
+                    <a class="anchor disabled" href="#">affreschi</a>
+                    <a class="anchor disabled" href="#">disegni</a>
+                    <a class="anchor disabled" href="#">incisioni</a>
+                    <a class="anchor disabled" href="#">sculture</a>
                 </div>
             </div>
             
@@ -99,14 +121,18 @@
                         <div class="gutter-sizer"></div>
                         <div class="grid-item painting-container">
                             <div class="row">
-                                <img class="col-md-12 painting-container-img" src="img/gallery/IN_59_Periferia-romana.jpg">
+                                <a href="img/gallery/IN_59_Periferia-romana.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                  <img class="col-md-12 painting-container-img" src="img/gallery/IN_59_Periferia-romana.jpg">
+                                </a>
                                 <div class="col-md-12 painting-container-title">Periferia romana</div>
                                 <div class="col-md-12 painting-container-year">1959</div>
                             </div>
                         </div>
                         <div class="grid-item painting-container">
                             <div class="row">
-                                <img class="col-md-12 painting-container-img" src="img/gallery/AF_94_Primavera.jpg">
+                                <a href="img/gallery/AF_94_Primavera.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                  <img class="col-md-12 painting-container-img" src="img/gallery/AF_94_Primavera.jpg">
+                                </a>
                                 <div class="col-md-12 painting-container-title">Primavera</div>
                                 <div class="col-md-12 painting-container-year">1959</div>
                             </div>

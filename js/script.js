@@ -6,6 +6,13 @@ $( document ).ready(function() {
         // columnWidth: 25%,
         // gutter: 20
     });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+            alwaysShowClose: true
+        });
+    });
 });
 
 // $(window).on('resize', function (event) {
