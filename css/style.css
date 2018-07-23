@@ -331,6 +331,41 @@ h1.title {
     text-decoration: underline;
 }
 
+#biography .biography-container {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#biography-page #biography .biography-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#biography-page .biography-img-big {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#biography-page .biography-img-small {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#biography-page .biography-desc {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+}
+
 #news {
     margin: 0;
     padding: 0;
@@ -669,6 +704,40 @@ h1.title {
     #biography .biography-container {
         padding-left: 34px;
         padding-right: 34px;
+    }
+
+    #biography-page #biography .biography-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #biography-page .biography-img-big {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #biography-page .biography-img-small {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #biography-page .biography-desc {
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #biography-page #biography div:last-child .biography-desc {
+        margin-bottom: 0px;
     }
 
     #news {
@@ -1136,6 +1205,41 @@ h1.title {
         text-decoration: underline;
     }
 
+    #biography-page .biography-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #biography-page #biography div:last-child .biography-desc {
+        margin-bottom: 0px;
+    }
+
     #news {
         margin: 0;
         padding: 0;
@@ -1596,6 +1700,41 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         text-decoration: underline;
+    }
+
+    #biography-page .biography-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #biography-page #biography div:last-child .biography-desc {
+        margin-bottom: 0px;
     }
 
     #news {
@@ -2066,6 +2205,41 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         text-decoration: underline;
+    }
+
+    #biography-page .biography-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #biography-page .biography-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #biography-page #biography div:last-child .biography-desc {
+        margin-bottom: 0px;
     }
 
     #news {
