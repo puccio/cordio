@@ -341,19 +341,19 @@ h1.title {
     padding-right: 20px;
 }
 
-#biography-page .biography-img-big {
+#biography-page #biography .biography-img-big {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
 }
 
-#biography-page .biography-img-small {
+#biography-page #biography .biography-img-small {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
 }
 
-#biography-page .biography-desc {
+#biography-page #biography .biography-desc {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -364,6 +364,10 @@ h1.title {
     color: #666666;
     letter-spacing: 0.3px;
     line-height: 18px;
+}
+
+#biography-page #biography div:last-child .biography-desc {
+    margin-bottom: 0px;
 }
 
 #news {
@@ -420,6 +424,40 @@ h1.title {
     line-height: 18px;
 
     margin-top: 18px;
+}
+
+#news-page #news .news-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#news-page #news .news-img-big {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#news-page #news .news-img-small {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#news-page #news .news-desc {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+}
+
+#news-page #news div:last-child .news-desc {
+    margin-bottom: 0px;
 }
 
 #littleones {
@@ -711,19 +749,19 @@ h1.title {
         padding-right: 20px;
     }
 
-    #biography-page .biography-img-big {
+    #biography-page #biography .biography-img-big {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
 
-    #biography-page .biography-img-small {
+    #biography-page #biography .biography-img-small {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
 
-    #biography-page .biography-desc {
+    #biography-page #biography .biography-desc {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -794,6 +832,40 @@ h1.title {
         line-height: 18px;
     
         margin-top: 18px;
+    }
+
+    #news-page #news .news-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #news-page #news .news-img-big {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #news-page #news .news-img-small {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #news-page #news .news-desc {
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #news-page #news div:last-child .news-desc {
+        margin-bottom: 0px;
     }
 
     #littleones {
@@ -1205,7 +1277,7 @@ h1.title {
         text-decoration: underline;
     }
 
-    #biography-page .biography-img-big {
+    #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
         height: auto;
@@ -1214,7 +1286,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-img-small {
+    #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
         margin-bottom: 50px;
@@ -1222,7 +1294,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-desc {
+    #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
@@ -1300,6 +1372,41 @@ h1.title {
 
         position: absolute;
         bottom: 0px;
+    }
+
+    #news-page #news .news-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #news-page #news div:last-child .news-desc {
+        margin-bottom: 0px;
     }
 
     #littleones {
@@ -1702,7 +1809,7 @@ h1.title {
         text-decoration: underline;
     }
 
-    #biography-page .biography-img-big {
+    #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
         height: auto;
@@ -1711,7 +1818,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-img-small {
+    #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
         margin-bottom: 50px;
@@ -1719,7 +1826,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-desc {
+    #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
@@ -1797,6 +1904,41 @@ h1.title {
 
         position: absolute;
         bottom: 0px;
+    }
+
+    #news-page #news .news-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #news-page #news div:last-child .news-desc {
+        margin-bottom: 0px;
     }
 
     #littleones {
@@ -2144,8 +2286,6 @@ h1.title {
         margin-top: 20px;
     }
 
-
-
     .ekko-lightbox-nav-overlay {
         width: 940px;
     }
@@ -2160,10 +2300,6 @@ h1.title {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
-
 
     #biography {
         margin: 0;
@@ -2207,7 +2343,7 @@ h1.title {
         text-decoration: underline;
     }
 
-    #biography-page .biography-img-big {
+    #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
         height: auto;
@@ -2216,7 +2352,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-img-small {
+    #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
         margin-bottom: 50px;
@@ -2224,7 +2360,7 @@ h1.title {
         margin-right: auto;
     }
 
-    #biography-page .biography-desc {
+    #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
@@ -2306,6 +2442,41 @@ h1.title {
 
     #news .showmore {
         margin-top: 0px;
+    }
+
+    #news-page #news .news-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #news-page #news .news-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+
+    #news-page #news div:last-child .news-desc {
+        margin-bottom: 0px;
     }
 
     #littleones {
