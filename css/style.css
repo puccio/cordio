@@ -30,16 +30,6 @@ h1 {
     margin-left: auto;
 }
 
-#gallery-page  h1 {
-    line-height: initial;
-    font-size: 40px;
-    color: #030303;
-    text-transform: capitalize;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-}
-
 h2 {
     font-weight: 400;
     font-style: normal;
@@ -53,61 +43,15 @@ h2 {
     margin-left: auto;
 }
 
-#gallery-page .subtitle {
-    padding: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#gallery-page h2 {
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.3px;
-    line-height: 18px;
-    font-size: 14px;
-    color: #666666;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
-    width: 100%;
-}
-
 h1.title {
+    line-height: initial;
     font-size: 26px;
     color: #030303;
     text-transform: capitalize;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
-}
-
-#gallery-page .anchors {
     padding: 0;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-#gallery-page .anchors a.anchor {
-    font-size: 22px;
-    color: #c0c0c0;
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    text-decoration: none;
-    font-weight: 700;
-    font-style: normal;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#gallery-page .anchors a.anchor.active {
-    text-decoration: underline;
-    color: rgba(0, 0, 0, 0.9);
 }
 
 .container {
@@ -285,6 +229,64 @@ h1.title {
     padding: 0;
     margin: 0;
     margin-top: 5px;
+}
+
+#gallery-page  h1 {
+    line-height: initial;
+    font-size: 40px;
+    color: #030303;
+    text-transform: capitalize;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+}
+
+#gallery-page .subtitle {
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#gallery-page h2 {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: 100%;
+}
+
+#gallery-page .anchors {
+    padding: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#gallery-page .anchors a.anchor {
+    font-size: 22px;
+    color: #c0c0c0;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#gallery-page .anchors a.anchor.active {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 #biography {
@@ -1203,16 +1205,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page  h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0px;
-    }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -1226,28 +1218,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page h2 {
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.3px;
-        line-height: 18px;
-        font-size: 14px;
-        color: #666666;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
-    }
-
-    #gallery-page .subtitle {
-        padding: 0px;
-        margin: 0px;
-        margin-left: 34px;
-        margin-right: 34px;
-    }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -1255,32 +1225,7 @@ h1.title {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 60px;
-    }
-
-    #gallery-page .anchors {
         padding: 0;
-        margin-left: 34px;
-        margin-right: 34px;
-        margin-top: 60px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #gallery-page .anchors a.anchor {
-        font-size: 22px;
-        color: #c0c0c0;
-        text-transform: capitalize;
-        letter-spacing: 0px;
-        text-decoration: none;
-        font-weight: 700;
-        font-style: normal;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #gallery-page .anchors a.anchor.active {
-        text-decoration: underline;
-        color: rgba(0, 0, 0, 0.9);
     }
 
     .container {
@@ -1363,6 +1308,64 @@ h1.title {
         padding: 0;
         margin: 0;
         margin-top: 5px;
+    }
+
+    #gallery-page  h1 {
+        line-height: initial;
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+
+    #gallery-page h2 {
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    #gallery-page .anchors {
+        padding: 0;
+        margin-left: 34px;
+        margin-right: 34px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #gallery-page .anchors a.anchor {
+        font-size: 22px;
+        color: #c0c0c0;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        text-decoration: none;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #gallery-page .anchors a.anchor.active {
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.9);
     }
 
     .showmore {
@@ -1806,16 +1809,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page  h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0px;
-    }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -1829,26 +1822,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page h2 {
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.3px;
-        line-height: 18px;
-        font-size: 14px;
-        color: #666666;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
-    }
-
-    #gallery-page .subtitle {
-        padding: 0px;
-        margin: 0px;
-    }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -1856,32 +1829,7 @@ h1.title {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 60px;
-    }
-
-    #gallery-page .anchors {
         padding: 0;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 60px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #gallery-page .anchors a.anchor {
-        font-size: 22px;
-        color: #c0c0c0;
-        text-transform: capitalize;
-        letter-spacing: 0px;
-        text-decoration: none;
-        font-weight: 700;
-        font-style: normal;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #gallery-page .anchors a.anchor.active {
-        text-decoration: underline;
-        color: rgba(0, 0, 0, 0.9);
     }
 
     .container {
@@ -1967,6 +1915,62 @@ h1.title {
         padding: 0;
         margin: 0;
         margin-top: 5px;
+    }
+
+    #gallery-page  h1 {
+        line-height: initial;
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+
+    #gallery-page h2 {
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #gallery-page .anchors {
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #gallery-page .anchors a.anchor {
+        font-size: 22px;
+        color: #c0c0c0;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        text-decoration: none;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #gallery-page .anchors a.anchor.active {
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.9);
     }
 
     .showmore {
@@ -2397,16 +2401,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page  h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0px;
-    }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -2420,26 +2414,6 @@ h1.title {
         margin-left: auto;
     }
 
-    #gallery-page h2 {
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.3px;
-        line-height: 18px;
-        font-size: 14px;
-        color: #666666;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
-    }
-
-    #gallery-page .subtitle {
-        padding: 0px;
-        margin: 0px;
-    }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -2447,32 +2421,7 @@ h1.title {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 60px;
-    }
-
-    #gallery-page .anchors {
         padding: 0;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 60px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    #gallery-page .anchors a.anchor {
-        font-size: 22px;
-        color: #c0c0c0;
-        text-transform: capitalize;
-        letter-spacing: 0px;
-        text-decoration: none;
-        font-weight: 700;
-        font-style: normal;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #gallery-page .anchors a.anchor.active {
-        text-decoration: underline;
-        color: rgba(0, 0, 0, 0.9);
     }
 
     .container {
@@ -2556,6 +2505,62 @@ h1.title {
         padding: 0;
         margin: 0;
         margin-top: 5px;
+    }
+
+    #gallery-page h1 {
+        line-height: initial;
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+
+    #gallery-page h2 {
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    #gallery-page .subtitle {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #gallery-page .anchors {
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #gallery-page .anchors a.anchor {
+        font-size: 22px;
+        color: #c0c0c0;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        text-decoration: none;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #gallery-page .anchors a.anchor.active {
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.9);
     }
 
     .showmore {
