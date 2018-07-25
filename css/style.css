@@ -179,7 +179,7 @@ h1.title {
     color: #0030ff;
 }
 
-#gallery {
+/* #gallery {
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
@@ -196,6 +196,32 @@ h1.title {
 #gallery .painting-container .row {
     padding: 0;
     margin: 0;
+}
+
+#gallery .painting-container .row .painting-container-img {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+} */
+
+#gallery {
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#gallery .painting-container {
+    width: calc(50% - 10px);
+    background-color: #fff;
+    margin-left: 0;
+    padding-right: 0px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+#gallery .gutter-sizer {
+    width: 20px;
 }
 
 #gallery .painting-container .row .painting-container-img {
