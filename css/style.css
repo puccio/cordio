@@ -2584,7 +2584,7 @@ h1.title {
         margin-top: 20px;
     }
 
-    .ekko-lightbox-nav-overlay {
+    /* .ekko-lightbox-nav-overlay {
         width: 940px;
     }
 
@@ -2597,7 +2597,79 @@ h1.title {
         background: #000;
         margin-left: auto;
         margin-right: auto;
+    } */
+
+
+
+
+
+
+    .modal-backdrop {
+        background-color: #fff;
     }
+
+    .modal-backdrop.fade {
+        opacity: 0.9;
+    }
+
+    .modal{
+        padding: 0 !important;
+    }
+    
+    .modal-dialog {
+        /* max-width: 940px !important;
+        height: 100%; */
+        margin-top: 90px !important;
+    }
+
+    .modal-content {
+        background-color: initial;
+        border: initial;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-header .close {
+        float: right;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #000;
+        text-shadow: initial;
+        height: 16px;
+    }
+    
+    .modal-header .close span {
+        /* sistemare la posizione della x di close */
+    }
+
+    .ekko-lightbox {
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        padding-right: 0!important;
+    }
+
+
+
+
+
+
+
 
     #biography {
         margin: 0;
