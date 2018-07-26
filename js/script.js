@@ -152,6 +152,288 @@ $( document ).ready(function() {
                     "year": "1978",
                     "description": ""
                 }
+                ,
+                {
+                    "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "src_high": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "title": "Periferia romana",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Primavera.jpg",
+                    "src_high": "img/gallery/AF_94_Primavera.jpg",
+                    "title": "Primavera",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "src_high": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "title": "Uccelli nel bosco",
+                    "category": "#disegni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "src_high": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "title": "Pesce e fioria",
+                    "category": "#disegni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "src_high": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "title": "Cielo azzurro",
+                    "category": "#incisioni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "src_high": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "title": "Composizione verde Somlia",
+                    "category": "#incisioni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "src_high": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "title": "La casa del poeta",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "src_high": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "title": "Periferia romana",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Primavera.jpg",
+                    "src_high": "img/gallery/AF_94_Primavera.jpg",
+                    "title": "Primavera",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "src_high": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "title": "Uccelli nel bosco",
+                    "category": "#disegni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "src_high": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "title": "Pesce e fioria",
+                    "category": "#disegni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "src_high": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "title": "Cielo azzurro",
+                    "category": "#incisioni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "src_high": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "title": "Composizione verde Somlia",
+                    "category": "#incisioni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "src_high": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "title": "La casa del poeta",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "src_high": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "title": "Periferia romana",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Primavera.jpg",
+                    "src_high": "img/gallery/AF_94_Primavera.jpg",
+                    "title": "Primavera",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "src_high": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "title": "Uccelli nel bosco",
+                    "category": "#disegni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "src_high": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "title": "Pesce e fioria",
+                    "category": "#disegni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "src_high": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "title": "Cielo azzurro",
+                    "category": "#incisioni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "src_high": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "title": "Composizione verde Somlia",
+                    "category": "#incisioni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "src_high": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "title": "La casa del poeta",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "src_high": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "title": "Periferia romana",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Primavera.jpg",
+                    "src_high": "img/gallery/AF_94_Primavera.jpg",
+                    "title": "Primavera",
+                    "category": "#affreschi",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "src_high": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "title": "Uccelli nel bosco",
+                    "category": "#disegni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "src_high": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "title": "Pesce e fioria",
+                    "category": "#disegni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "src_high": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "title": "Cielo azzurro",
+                    "category": "#incisioni",
+                    "year": "1959",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "src_high": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "title": "Composizione verde Somlia",
+                    "category": "#incisioni",
+                    "year": "1985",
+                    "description": ""
+                },
+                {
+                    "src_low": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "src_high": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "title": "La casa del poeta",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
+                ,
+                {
+                    "src_low": "img/gallery/IN_73_Monica.jpg",
+                    "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "title": "Monica",
+                    "category": "#sculture",
+                    "year": "1978",
+                    "description": ""
+                }
             ]
     };
 
@@ -183,7 +465,11 @@ $( document ).ready(function() {
 
     $("#gallery-page .showmore").on('click', function() {
 
-        var allImagesTemp = allImages.images;
+        // active anchor
+        var clickedAnchor = $('.anchor.active').attr("href");
+
+        //var allImagesTemp = allImages.images;
+        var allImagesTemp = getImagesFromCategory(clickedAnchor);
         var numberOfimagesToShowOnLoadmoreTemp = allImages.numberOfimagesToShowOnLoadmore;
 
         for(var i = numberOfImagesShowed; i < allImagesTemp.length && numberOfimagesToShowOnLoadmoreTemp > 0; i++, numberOfimagesToShowOnLoadmoreTemp--) {
@@ -201,7 +487,7 @@ $( document ).ready(function() {
         }
 
         // if all images are showed
-        if( numberOfImagesShowed == allImages.images.length ) {
+        if( numberOfImagesShowed == allImagesTemp.length ) {
             $('.showmore').hide();
         }
 
@@ -246,7 +532,7 @@ $( document ).ready(function() {
 
     $("#gallery-page .anchors .anchor").click(function() {
 
-        // active anchor
+        // clicked anchor
         var clickedAnchor = $(this).attr("href");
 
         // clicked anchor
@@ -254,6 +540,9 @@ $( document ).ready(function() {
 
         // if anchor clicked is different to the current
         if(activeAnchor !== clickedAnchor) {
+
+            // show showmore button
+            $('.showmore').show();
 
             // all images of the gallery
             var oldImages = $('.grid-item');
@@ -264,25 +553,52 @@ $( document ).ready(function() {
             // set active anchor clicked
             $(this).addClass("active");
 
-            $.each(allImages.images, function(i, image) {
-                if( image.category === clickedAnchor || clickedAnchor === "#all" ) {
+            // prendo le immagini della categoria cliccata
+            var allImagesTemp = getImagesFromCategory(clickedAnchor);
 
-                    var newImages = $('<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>');
+            var numberOfimagesToShow = allImages.numberOfimagesToShow;
+
+            numberOfImagesShowed = 0;
+
+            for(var i = 0; i < allImagesTemp.length && i < numberOfimagesToShow; i++) {
+                if( allImagesTemp[i].category === clickedAnchor || clickedAnchor === "#all" ) {
+
+                    var newImages = $('<div class="grid-item painting-container"><div class="row"><a href="' + allImagesTemp[i].src_high + '" data-toggle="lightbox" data-gallery="example-gallery"><img class="col-md-12 painting-container-img" src="' + allImagesTemp[i].src_low + '"></a><div class="col-md-12 painting-container-title">' + allImagesTemp[i].title + '</div><div class="col-md-12 painting-container-year">' + allImagesTemp[i].year + '</div></div></div>');
                 
                     // from string to jquery object
                     var $newImages = $(newImages);
 
                     // appending new images
                     $grid.append(newImages).masonry('appended', newImages);
+
+                    // update the field
+                    numberOfImagesShowed++;
                 }
-            })
+            }
 
             // removing old images
             $grid.masonry('remove', $(oldImages)).masonry('layout');
-              
+            
+
+            // rimuovere il tasto mostra altro se non ci sono altri risultati
         }
 
         return false;
     });
+
+    function getImagesFromCategory(clickedAnchor) {
+        var allImagesFromCategory = [];
+
+        for(var i = 0; i < allImages.images.length; i++) {
+            if( clickedAnchor === "#all" ) {
+                allImagesFromCategory = allImages.images;
+                break;
+            } else if (allImages.images[i].category === clickedAnchor) {
+                allImagesFromCategory.push(allImages.images[i]);
+            }
+        }
+
+        return allImagesFromCategory;
+    }
 
 });
