@@ -687,6 +687,138 @@ h1.title {
     display: none;
 }
 
+.modal-backdrop {
+    background-color: #fff;
+}
+
+.modal-backdrop.fade {
+    opacity: 0.95;
+}
+
+.modal {
+    padding: 0 !important;
+}
+
+.modal-dialog {
+    max-width: 940px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 90px !important;
+}
+
+/* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+.modal-open .modal {
+    overflow-y: scroll;
+}
+
+.ekko-lightbox-container {
+    height: auto !important;
+}
+
+.ekko-lightbox-item {
+    position: initial !important;
+}
+
+.modal-content {
+    background-color: initial;
+    border: 0;
+}
+
+.modal-header {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+
+.modal-body {
+    border: 0;
+    padding: 0;
+}
+
+.modal-footer {
+    border: 0;
+    padding: 0;
+    display: initial;
+}
+
+.modal-footer .modal-painting-container-title {
+    font-size: 20px;
+    color: #030303;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    line-height: initial;
+}
+
+.modal-footer .modal-painting-container-year {
+    font-size: 16px;
+    color: #1f1f1f;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.modal-footer .modal-painting-container-audio {
+    margin-top: 30px;
+    /* height: 92px; */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.modal-footer .modal-painting-container-audio audio {
+    width: 100%;
+}
+
+.modal-footer .modal-painting-container-desc {
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 92px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.modal-footer > :not(:first-child) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.modal-footer > :not(:last-child) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.modal-header .close {
+    float: right;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000;
+    text-shadow: initial;
+    outline: none;
+}
+
+.modal-header .close span {
+    margin-right: -3px;
+    position:relative;
+    top: -10px;
+}
+
+.ekko-lightbox {
+    display: initial;
+    align-items: initial;
+    justify-content: initial;
+    padding-right: 0!important;
+}
+
 @media (min-width: 576px) {
 
     .container {
@@ -836,8 +968,8 @@ h1.title {
     }
 
     #biography .biography-container {
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #biography-page #biography .biography-container {
@@ -881,8 +1013,8 @@ h1.title {
     
     #news .news-containers {
         margin-bottom: 60px;
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     #news .news-containers .news-container {
@@ -933,48 +1065,14 @@ h1.title {
         margin-top: 18px;
     }
 
-    /* #news-page #news .news-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #news-page #news .news-img-big {
-        width: 100%;
-        height: auto;
-        margin-bottom: 50px;
-    }
-
-    #news-page #news .news-img-small {
-        width: 100%;
-        height: auto;
-        margin-bottom: 50px;
-    }
-
-    #news-page #news .news-desc {
-        margin-bottom: 50px;
-        margin-left: auto;
-        margin-right: auto;
-
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        color: #666666;
-        letter-spacing: 0.3px;
-        line-height: 18px;
-    }
-
-    #news-page #news div:last-child .news-desc {
-        margin-bottom: 0px;
-    } */
-
     #littleones {
         margin: 0;
         padding: 0;
     }
 
     #littleones .littleones-container {
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #littleones-page #littleones .littleones-container {
@@ -1017,8 +1115,8 @@ h1.title {
     }
 
     #witnesses .witnesses-container {
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #witnesses-page #witnesses .witnesses-container {
@@ -1054,169 +1152,139 @@ h1.title {
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
     }
-}
 
-/* @media (min-width: 576px) {
-
-    h1 {
-        font-weight: 700;
-        font-style: normal;
-        font-size: 30px;
-        color: 030303;
-        letter-spacing: 0;
-        text-align: center;
-        margin-top: 60px;
-        width: 672px;
-        margin-right: auto;
-        margin-left: auto;
+    .modal-backdrop {
+        background-color: #fff;
     }
 
-    h2 {
-        font-weight: 400; 
-        font-style: normal;
-        font-size: 34px;
-        color: #1f1f1f;
-        letter-spacing: 0;
-        text-align: center;
-        margin-top: 60px;
-        width: 641px;
-        margin-right: auto;
-        margin-left: auto;
+    .modal-backdrop.fade {
+        opacity: 0.95;
     }
 
-    h1.title {
-        font-size: 40px;
+    .modal {
+        padding: 0 !important;
+    }
+    
+    .modal-dialog {
+        max-width: 940px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-top: 90px !important;
+    }
+
+    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+    .modal-open .modal {
+        overflow-y: scroll;
+    }
+
+    .ekko-lightbox-container {
+        height: auto !important;
+    }
+
+    .ekko-lightbox-item {
+        position: initial !important;
+    }
+
+    .modal-content {
+        background-color: initial;
+        border: 0;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+
+    .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        display: initial;
+    }
+
+    .modal-footer .modal-painting-container-title {
+        font-size: 20px;
         color: #030303;
         text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 60px;
-    }
-
-    .container {
-        max-width: 768px;
-    }
-
-    .navbar {
-        max-width: 1440px;
-        height: 80px;
-        padding-left: 34px;
-        padding-right: 34px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navbar .navbar-nav.navbar-nav-smallest {
-        display: none;
-    }
-
-    .navbar .navbar-nav.navbar-nav-biggest {
-        display: block;
-    }
-
-    .row {
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0;
-    }
-
-    #gallery {
-        padding: 0;
-        margin-left: 34px;
-        margin-right: 34px;
-    }
-
-    #gallery .painting-container {
-        width: 220px;
-        background-color:#fff;
-        margin-left: 0;
-        margin-bottom: 40px;
-        float: left;
-    }
-
-    #gallery .painting-container .row {
-        padding: 0;
-        margin: 0;
-    }
-
-    #gallery .painting-container .row .painting-container-img {
-        padding: 0;
-        margin: 0;
-        background-color:#d8d8d8;
-    }
-
-    #gallery .painting-container .row .painting-container-title {
-        font-weight: 600; 
-        font-style: normal;
-        font-size: 14px;
-        color: #1f1f1f;
-        letter-spacing: 0;
-        line-height: 15px;
-        height: 15px;
-        padding: 0;
-        margin: 0;
-        margin-top: 10px;
-    }
-
-    #gallery .painting-container .row .painting-container-year {
-        font-weight: 400;
-        font-style: italic;
-        font-size: 14px;
-        color: #1f1f1f;
-        letter-spacing: 0;
-        line-height: 15px;
-        height: 15px;
-        padding: 0;
-        margin: 0;
-        margin-top: 5px;
-    }
-
-    #footer {
-        background-color: #000;
-        font-size: 15px;
-        color: #fafafa;
-        letter-spacing: 0;
-        line-height: 22px;
-        font-weight: 400;
-        font-style: normal;
-        margin-top: 200px;
-        padding: 0px;
-    }
-
-    #footer .footer-container {
-        padding: 0;
-    }
-
-    #footer .footer-content {
-
-    }
-
-    #footer .footer-content .footer-content-title {
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-        letter-spacing: 2.1px;
+        letter-spacing: 0px;
         font-weight: 700;
         font-style: normal;
-        text-transform: uppercase;
-        text-align: center;
+        margin-top: 20px;
+        line-height: initial;
+    }
+
+    .modal-footer .modal-painting-container-year {
+        font-size: 16px;
+        color: #1f1f1f;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .modal-footer .modal-painting-container-audio {
         margin-top: 30px;
-        margin-bottom: 30px;
+        /* height: 92px; */
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
-    #footer .footer-content .footer-content-sections {
-        display: none;
+    .modal-footer .modal-painting-container-audio audio {
+        width: 100%;
     }
 
-    #footer .footer-content .footer-content-timetables {
-        display: none;
+    .modal-footer .modal-painting-container-desc {
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        width: 100%;
+        height: 92px;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
-    #footer .footer-content-bottom {
-        display: none;
+    .modal-footer > :not(:first-child) {
+        margin-left: 0;
+        margin-right: 0;
     }
 
-} */
+    .modal-footer > :not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-header .close {
+        float: right;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #000;
+        text-shadow: initial;
+        outline: none;
+    }
+    
+    .modal-header .close span {
+        margin-right: -3px;
+        position:relative;
+        top: -10px;
+    }
+
+    .ekko-lightbox {
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        padding-right: 0!important;
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -1821,6 +1889,139 @@ h1.title {
         line-height: 22px;
         margin-right: 20px;
     }
+
+    .modal-backdrop {
+        background-color: #fff;
+    }
+
+    .modal-backdrop.fade {
+        opacity: 0.95;
+    }
+
+    .modal {
+        padding: 0 !important;
+    }
+    
+    .modal-dialog {
+        max-width: 940px !important;
+        margin-left: 34px !important;
+        margin-right: 34px !important;
+        margin-top: 90px !important;
+    }
+
+    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+    .modal-open .modal {
+        overflow-y: scroll;
+    }
+
+    .ekko-lightbox-container {
+        height: auto !important;
+    }
+
+    .ekko-lightbox-item {
+        position: initial !important;
+    }
+
+    .modal-content {
+        background-color: initial;
+        border: 0;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+
+    .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        display: initial;
+    }
+
+    .modal-footer .modal-painting-container-title {
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 30px;
+        line-height: initial;
+    }
+
+    .modal-footer .modal-painting-container-year {
+        font-size: 20px;
+        color: #1f1f1f;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .modal-footer .modal-painting-container-audio {
+        margin-top: 60px;
+        width: 620px;
+        /* height: 92px; */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer .modal-painting-container-audio audio {
+        width: 100%;
+    }
+
+    .modal-footer .modal-painting-container-desc {
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 620px;
+        height: 92px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer > :not(:first-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-header .close {
+        float: right;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #000;
+        text-shadow: initial;
+        outline: none;
+    }
+    
+    .modal-header .close span {
+        margin-right: -3px;
+        position:relative;
+        top: -10px;
+    }
+
+    .ekko-lightbox {
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        padding-right: 0!important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -2414,6 +2615,137 @@ h1.title {
         line-height: 22px;
         margin-right: 20px;
     }
+
+    .modal-backdrop {
+        background-color: #fff;
+    }
+
+    .modal-backdrop.fade {
+        opacity: 0.95;
+    }
+
+    .modal {
+        padding: 0 !important;
+    }
+    
+    .modal-dialog {
+        max-width: 940px !important;
+        margin-top: 90px !important;
+    }
+
+    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+    .modal-open .modal {
+        overflow-y: scroll;
+    }
+
+    .ekko-lightbox-container {
+        height: auto !important;
+    }
+
+    .ekko-lightbox-item {
+        position: initial !important;
+    }
+
+    .modal-content {
+        background-color: initial;
+        border: 0;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+
+    .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        display: initial;
+    }
+
+    .modal-footer .modal-painting-container-title {
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 30px;
+        line-height: initial;
+    }
+
+    .modal-footer .modal-painting-container-year {
+        font-size: 20px;
+        color: #1f1f1f;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .modal-footer .modal-painting-container-audio {
+        margin-top: 60px;
+        width: 620px;
+        /* height: 92px; */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer .modal-painting-container-audio audio {
+        width: 100%;
+    }
+
+    .modal-footer .modal-painting-container-desc {
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 620px;
+        height: 92px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer > :not(:first-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-header .close {
+        float: right;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #000;
+        text-shadow: initial;
+        outline: none;
+    }
+    
+    .modal-header .close span {
+        margin-right: -3px;
+        position:relative;
+        top: -10px;
+    }
+
+    .ekko-lightbox {
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        padding-right: 0!important;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -2595,164 +2927,6 @@ h1.title {
     .showmore {
         margin-top: 20px;
     }
-
-    /* .ekko-lightbox-nav-overlay {
-        width: 940px;
-    }
-
-    .ekko-lightbox-nav-overlay a {
-        opacity: 1 !important;
-    }
-
-    .ekko-lightbox-nav-overlay a span {
-        color: red;
-        background: #000;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
-
-
-
-
-
-    .modal-backdrop {
-        background-color: #fff;
-    }
-
-    .modal-backdrop.fade {
-        opacity: 0.95;
-    }
-
-    .modal {
-        padding: 0 !important;
-    }
-    
-    .modal-dialog {
-        max-width: 940px !important;
-        margin-top: 90px !important;
-    }
-
-    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
-    .modal-open .modal {
-        overflow-y: scroll;
-    }
-
-    .ekko-lightbox-container {
-        height: auto !important;
-    }
-
-    .ekko-lightbox-item {
-        position: initial !important;
-    }
-
-    .modal-content {
-        background-color: initial;
-        border: 0;
-    }
-
-    .modal-header {
-        border: 0;
-        padding: 0;
-        margin: 0;
-        height: 70px;
-    }
-
-    .modal-body {
-        border: 0;
-        padding: 0;
-    }
-
-    .modal-footer {
-        border: 0;
-        padding: 0;
-        display: initial;
-    }
-
-    .modal-footer .modal-painting-container-title {
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        letter-spacing: 0px;
-        font-weight: 700;
-        font-style: normal;
-        margin-top: 30px;
-        line-height: initial;
-    }
-
-    .modal-footer .modal-painting-container-year {
-        font-size: 20px;
-        color: #1f1f1f;
-        letter-spacing: 0px;
-        font-weight: 400;
-        font-style: italic;
-    }
-
-    .modal-footer .modal-painting-container-audio {
-        margin-top: 60px;
-        width: 620px;
-        /* height: 92px; */
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    .modal-footer .modal-painting-container-audio audio {
-        width: 100%;
-    }
-
-    .modal-footer .modal-painting-container-desc {
-        font-size: 14px;
-        color: #666666;
-        letter-spacing: 0.3px;
-        line-height: 18px;
-        font-weight: 400;
-        font-style: normal;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        width: 620px;
-        height: 92px;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    .modal-footer > :not(:first-child) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .modal-footer > :not(:last-child) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .modal-header .close {
-        float: right;
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: #000;
-        text-shadow: initial;
-        outline: none;
-    }
-    
-    .modal-header .close span {
-        margin-right: -3px;
-        position:relative;
-        top: -10px;
-    }
-
-    .ekko-lightbox {
-        display: initial;
-        align-items: initial;
-        justify-content: initial;
-        padding-right: 0!important;
-    }
-
-
-
-
-
-
-
 
     #biography {
         margin: 0;
@@ -3167,6 +3341,137 @@ h1.title {
         letter-spacing: 0;
         line-height: 22px;
         margin-right: 20px;
+    }
+
+    .modal-backdrop {
+        background-color: #fff;
+    }
+
+    .modal-backdrop.fade {
+        opacity: 0.95;
+    }
+
+    .modal {
+        padding: 0 !important;
+    }
+    
+    .modal-dialog {
+        max-width: 940px !important;
+        margin-top: 90px !important;
+    }
+
+    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+    .modal-open .modal {
+        overflow-y: scroll;
+    }
+
+    .ekko-lightbox-container {
+        height: auto !important;
+    }
+
+    .ekko-lightbox-item {
+        position: initial !important;
+    }
+
+    .modal-content {
+        background-color: initial;
+        border: 0;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+
+    .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        display: initial;
+    }
+
+    .modal-footer .modal-painting-container-title {
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 30px;
+        line-height: initial;
+    }
+
+    .modal-footer .modal-painting-container-year {
+        font-size: 20px;
+        color: #1f1f1f;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .modal-footer .modal-painting-container-audio {
+        margin-top: 60px;
+        width: 620px;
+        /* height: 92px; */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer .modal-painting-container-audio audio {
+        width: 100%;
+    }
+
+    .modal-footer .modal-painting-container-desc {
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 620px;
+        height: 92px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer > :not(:first-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-header .close {
+        float: right;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #000;
+        text-shadow: initial;
+        outline: none;
+    }
+    
+    .modal-header .close span {
+        margin-right: -3px;
+        position:relative;
+        top: -10px;
+    }
+
+    .ekko-lightbox {
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        padding-right: 0!important;
     }
 
 }
