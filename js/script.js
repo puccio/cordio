@@ -15,6 +15,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
                     "src_high": "img/gallery/IN_59_Periferia-romana_high.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Periferia romana",
                     "category": "#affreschi",
                     "year": "1959",
@@ -23,6 +24,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/AF_94_Primavera.jpg",
                     "src_high": "img/gallery/AF_94_Primavera.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Primavera",
                     "category": "#affreschi",
                     "year": "1959",
@@ -31,6 +33,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
                     "src_high": "img/gallery/AF_94_Uccelli-nel-bosco.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Uccelli nel bosco",
                     "category": "#disegni",
                     "year": "1985",
@@ -39,6 +42,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_63_Pesce-e-fiori.jpg",
                     "src_high": "img/gallery/IN_63_Pesce-e-fiori.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Pesce e fioria",
                     "category": "#disegni",
                     "year": "1959",
@@ -47,6 +51,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_67_Cielo-azzurro.jpg",
                     "src_high": "img/gallery/IN_67_Cielo-azzurro.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Cielo azzurro",
                     "category": "#incisioni",
                     "year": "1959",
@@ -55,6 +60,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
                     "src_high": "img/gallery/IN_69_Composizione-verde-Somlia.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Composizione verde Somlia",
                     "category": "#incisioni",
                     "year": "1985",
@@ -63,6 +69,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_77_La-casa-del-poeta.jpg",
                     "src_high": "img/gallery/IN_77_La-casa-del-poeta.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "La casa del poeta",
                     "category": "#sculture",
                     "year": "1978",
@@ -72,6 +79,7 @@ $( document ).ready(function() {
                 {
                     "src_low": "img/gallery/IN_73_Monica.jpg",
                     "src_high": "img/gallery/IN_73_Monica.jpg",
+                    "src_audio": "audio/horse.mp3",
                     "title": "Monica",
                     "category": "#sculture",
                     "year": "1978",
@@ -414,15 +422,14 @@ $( document ).ready(function() {
         if(numberOfImagesShowed == allImages.numberOfimagesToShow) 
             return;
 
-        htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true></iframe></div><div class=modal-painting-container-desc>' + image.description + '</div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
+        htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg>Your browser does not support the audio element.</audio></div><div class=modal-painting-container-desc>' + image.description + '</div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
         numberOfImagesShowed++;
     })
 
-    // // populate the footer
-    // var audio = '<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
-    // $( ".modal-painting-container-audio" ).html( audio );
-    
-    
+
+    // versione con soundcloud
+    //         htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true></iframe></div><div class=modal-painting-container-desc>' + image.description + '</div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
+
 
     // populate the gallery
     $( ".grid" ).append( htmlImagesGallery );

@@ -2691,10 +2691,16 @@ h1.title {
     .modal-footer .modal-painting-container-audio {
         margin-top: 60px;
         width: 620px;
-        height: 92px;
+        /* height: 92px; */
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
+    .modal-footer .modal-painting-container-audio audio {
+        width: 100%;
+        border: 0;
+    }
+    
 
     .modal-footer .modal-painting-container-desc {
         font-size: 14px;
