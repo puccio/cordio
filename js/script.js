@@ -468,7 +468,7 @@ $( document ).ready(function() {
                         <div class=modal-painting-container-year>' + image.year + '</div>';
 
                         if (image.src_audio !== "") {
-                            htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg onclick=this.play();>Your browser does not support the audio element.</audio></div>';
+                            htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg></audio></div>';
                         }
                         
                         htmlImagesGallery += '\
