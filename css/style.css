@@ -709,6 +709,7 @@ h1.title {
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
 .modal-open .modal {
     overflow-y: scroll;
+    margin-bottom: 60px;
 }
 
 .ekko-lightbox-container {
@@ -780,7 +781,6 @@ h1.title {
     font-weight: 400;
     font-style: normal;
     margin-top: 30px;
-    margin-bottom: 60px;
     width: 100%;
     height: 92px;
     margin-left: auto !important;
@@ -1175,6 +1175,7 @@ h1.title {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
+        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -1246,7 +1247,6 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         margin-top: 30px;
-        margin-bottom: 60px;
         width: 100%;
         height: 92px;
         margin-left: auto !important;
@@ -1912,6 +1912,7 @@ h1.title {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
+        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -1984,7 +1985,6 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         margin-top: 60px;
-        margin-bottom: 60px;
         width: 620px;
         height: 92px;
         margin-left: auto !important;
@@ -2636,6 +2636,7 @@ h1.title {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
+        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -2708,7 +2709,6 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         margin-top: 60px;
-        margin-bottom: 60px;
         width: 620px;
         height: 92px;
         margin-left: auto !important;
@@ -3363,6 +3363,7 @@ h1.title {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
+        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -3435,7 +3436,6 @@ h1.title {
         font-weight: 400;
         font-style: normal;
         margin-top: 60px;
-        margin-bottom: 60px;
         width: 620px;
         height: 92px;
         margin-left: auto !important;
