@@ -14,11 +14,11 @@ $( document ).ready(function() {
             [
                 {
                     "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
-                    "src_high": "img/gallery/IN_59_Periferia-romana.jpg",
+                    "src_high": "img/gallery/IN_59_Periferia-romana_high.jpg",
                     "title": "Periferia romana",
                     "category": "#affreschi",
                     "year": "1959",
-                    "description": ""
+                    "description": "Il regalo che mi fece Giulietta Simionato per il mio matrimonio era una stampa rappresentante il Mar Mediterraneo, di un azzurro che al solo guardarlo risvegliava."
                 },
                 {
                     "src_low": "img/gallery/AF_94_Primavera.jpg",
@@ -405,7 +405,7 @@ $( document ).ready(function() {
             ]
     };
 
-    // il numero di immagini correntemente mostrate
+    // il numero di immagini corrente in gallery
     numberOfImagesShowed = 0;
 
     var htmlImagesGallery = "";
@@ -414,10 +414,16 @@ $( document ).ready(function() {
         if(numberOfImagesShowed == allImages.numberOfimagesToShow) 
             return;
 
-        htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
+        htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% height=166 scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true></iframe></div><div class=modal-painting-container-desc>' + image.description + '</div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
         numberOfImagesShowed++;
     })
+
+    // // populate the footer
+    // var audio = '<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+    // $( ".modal-painting-container-audio" ).html( audio );
     
+    
+
     // populate the gallery
     $( ".grid" ).append( htmlImagesGallery );
 

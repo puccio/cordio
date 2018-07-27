@@ -2612,25 +2612,38 @@ h1.title {
         opacity: 0.9;
     }
 
-    .modal{
+    .modal {
         padding: 0 !important;
     }
     
     .modal-dialog {
-        /* max-width: 940px !important;
-        height: 100%; */
+        max-width: 940px !important;
         margin-top: 90px !important;
+    }
+
+    /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+    .modal-open .modal {
+        overflow-y: scroll;
+    }
+
+    .ekko-lightbox-container {
+        height: auto !important;
+    }
+
+    .ekko-lightbox-item {
+        position: initial !important;
     }
 
     .modal-content {
         background-color: initial;
-        border: initial;
+        border: 0;
     }
 
     .modal-header {
         border: 0;
         padding: 0;
         margin: 0;
+        height: 70px;
     }
 
     .modal-body {
@@ -2641,20 +2654,71 @@ h1.title {
     .modal-footer {
         border: 0;
         padding: 0;
+        display: initial;
+    }
+
+    .modal-footer .modal-painting-container-title {
+        font-size: 40px;
+        color: #030303;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 30px;
+        line-height: initial;
+    }
+
+    .modal-footer .modal-painting-container-year {
+        font-size: 20px;
+        color: #1f1f1f;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .modal-footer .modal-painting-container-audio {
+        margin-top: 60px;
+        width: 620px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modal-footer .modal-painting-container-desc {
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 60px;
+        line-height: 18px;
+
+        /* width: 620px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-footer > :not(:first-child) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .modal-header .close {
         float: right;
         font-size: 2.5rem;
         font-weight: 400;
-        line-height: 1;
         color: #000;
         text-shadow: initial;
-        height: 16px;
     }
     
     .modal-header .close span {
-        /* sistemare la posizione della x di close */
+        margin-right: -3px;
+        position:relative;
+        top: -10px;
     }
 
     .ekko-lightbox {
