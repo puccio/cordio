@@ -2679,6 +2679,7 @@ h1.title {
     .modal-footer .modal-painting-container-audio {
         margin-top: 60px;
         width: 620px;
+        height: 92px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -2687,14 +2688,15 @@ h1.title {
         font-size: 14px;
         color: #666666;
         letter-spacing: 0.3px;
+        line-height: 18px;
         font-weight: 400;
         font-style: normal;
         margin-top: 60px;
-        line-height: 18px;
-
-        /* width: 620px; */
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 60px;
+        width: 620px;
+        height: 92px;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .modal-footer > :not(:first-child) {
