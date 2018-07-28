@@ -71,8 +71,8 @@ h1.title.title-section {
 }
 
 .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     padding-top: 14px;
     padding-bottom: 14px;
     box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
@@ -797,6 +797,16 @@ h1.title.title-section {
     height: 100%;
 } */
 
+/* .video-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.video-container .player {
+    width: 100%;
+} */
+
 @media (min-width: 576px) {
 
     .container {
@@ -819,8 +829,8 @@ h1.title.title-section {
     }
     
     .navbar {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
         padding-top: 14px;
         padding-bottom: 14px;
         box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
@@ -1344,8 +1354,8 @@ h1.title.title-section {
     }
 
     .navbar {
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 34px !important;
+        padding-right: 34px !important;
         padding-top: 24px;
         padding-bottom: 24px;
         box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
@@ -2793,8 +2803,8 @@ h1.title.title-section {
     .navbar {
         max-width: 1440px;
         height: 80px;
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 250px !important;
+        padding-right: 250px !important;
         margin-left: auto;
         margin-right: auto;
         box-shadow: none;
@@ -3325,9 +3335,14 @@ h1.title.title-section {
         margin-right: auto !important;
     }
 
+    /* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
+    .fixed-top {
+        position: sticky;
+    }
+
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
-        overflow-y: scroll;
+        overflow-y: visible;
         margin-bottom: 60px;
     }
 
