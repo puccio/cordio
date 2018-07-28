@@ -49,6 +49,10 @@ h1.title {
     padding: 0;
 }
 
+h1.title.title-section {
+    margin-top: 80px;
+}
+
 .container {
     width: 100%;
     padding-right: 0px;
@@ -1328,6 +1332,10 @@ h1.title {
         padding: 0;
     }
 
+    h1.title.title-section {
+        margin-top: 110px;
+    }
+
     .container {
         max-width: 1440px;
     }
@@ -2056,6 +2064,10 @@ h1.title {
         padding: 0;
     }
 
+    h1.title.title-section {
+        margin-top: 140px;
+    }
+
     .container {
         max-width: 1440px;
     }
@@ -2773,6 +2785,10 @@ h1.title {
         margin-left: auto;
         margin-bottom: 60px;
         padding: 0;
+    }
+
+    h1.title.title-section {
+        margin-top: 140px;
     }
 
     .container {
