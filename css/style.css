@@ -180,6 +180,11 @@ h1.title.title-section {
     text-align: center;
     width: 100%;
 
+    text-decoration: none;
+    color: #0030ff;
+}
+
+.showmore:hover {
     text-decoration: underline;
     color: #0030ff;
 }
