@@ -64,6 +64,7 @@ h1.title {
 
 .navbar.bg-light {
     background-color: #fff !important;
+    opacity: 0.95;
 }
 
 .navbar {
