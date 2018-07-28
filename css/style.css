@@ -40,7 +40,7 @@ h2 {
 
 h1.title {
     line-height: initial;
-    font-size: 40px;
+    font-size: 26px;
     color: #030303;
     text-transform: capitalize;
     margin-right: auto;
@@ -259,13 +259,7 @@ h1.title.title-section {
     margin-top: 5px;
 }
 
-#gallery-page  h1 {
-    line-height: initial;
-    font-size: 40px;
-    color: #030303;
-    text-transform: capitalize;
-    margin-right: auto;
-    margin-left: auto;
+#gallery-page h1 {
     margin-bottom: 0px;
 }
 
@@ -1426,13 +1420,7 @@ h1.title.title-section {
         margin-top: 5px;
     }
 
-    #gallery-page  h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
+    #gallery-page h1 {
         margin-bottom: 0px;
     }
 
@@ -2161,13 +2149,7 @@ h1.title.title-section {
         margin-top: 5px;
     }
 
-    #gallery-page  h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
+    #gallery-page h1 {
         margin-bottom: 0px;
     }
 
@@ -2887,12 +2869,6 @@ h1.title.title-section {
     }
 
     #gallery-page h1 {
-        line-height: initial;
-        font-size: 40px;
-        color: #030303;
-        text-transform: capitalize;
-        margin-right: auto;
-        margin-left: auto;
         margin-bottom: 0px;
     }
 
