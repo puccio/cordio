@@ -181,12 +181,12 @@ h1.title.title-section {
     width: 100%;
 
     text-decoration: none;
-    color: #0030ff;
+    color: #000;;
 }
 
 .showmore:hover {
     text-decoration: underline;
-    color: #0030ff;
+    color: #000;;
 }
 
 .changepage {
@@ -363,19 +363,26 @@ h1.title.title-section {
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 #biography .biography-container .biography-container-desc a.readmore {
-    position: absolute;
-    bottom: -20px;
+    position: relative;
+    top: 20px;
     
-    font-size: 20px;
-    color:#0030ff;
+    font-size: 18px;
+    color:#000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
 }
+
+#biography .biography-container .biography-container-desc a.readmore:hover {
+    text-decoration: underline;
+    color:#000;
+}
+
 
 #biography-page #biography .biography-container {
     padding-left: 20px;
@@ -503,14 +510,19 @@ h1.title.title-section {
 }
 
 #littleones .littleones-container .littleones-container-desc a.readmore {
-    position: absolute;
-    bottom: -20px;
+    position: relative;
+    top: 20px;
     
-    font-size: 20px;
-    color:#0030ff;
+    font-size: 18px;
+    color:#000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+}
+
+#littleones .littleones-container .littleones-container-desc a.readmore:hover {
+    color:#000;
     text-decoration: underline;
 }
 
@@ -581,14 +593,19 @@ h1.title.title-section {
 }
 
 #witnesses .witnesses-container .witnesses-container-desc a.readmore {
-    position: absolute;
-    bottom: -20px;
+    position: relative;
+    top: 20px;
 
-    font-size: 20px;
-    color:#0030ff;
+    font-size: 18px;
+    color:#000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+}
+
+#witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
+    color:#000;
     text-decoration: underline;
 }
 
@@ -1547,13 +1564,19 @@ h1.title.title-section {
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
+        color:#000;
     }
 
     #biography-page #biography .biography-img-big {
@@ -1692,12 +1715,18 @@ h1.title.title-section {
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #littleones .littleones-container .littleones-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
@@ -1771,12 +1800,18 @@ h1.title.title-section {
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
@@ -2277,13 +2312,19 @@ h1.title.title-section {
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
+        color:#000;
     }
 
     #biography-page #biography .biography-img-big {
@@ -2421,12 +2462,18 @@ h1.title.title-section {
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #littleones .littleones-container .littleones-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
@@ -2499,12 +2546,18 @@ h1.title.title-section {
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
@@ -3000,13 +3053,19 @@ h1.title.title-section {
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
+        color:#000;
     }
 
     #biography-page #biography .biography-img-big {
@@ -3149,12 +3208,18 @@ h1.title.title-section {
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #littleones .littleones-container .littleones-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
@@ -3227,12 +3292,18 @@ h1.title.title-section {
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
+        top: initial;
 
-        font-size: 20px;
-        color:#0030ff;
+        font-size: 18px;
+        color:#000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none;
+    }
+    
+    #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
+        color:#000;
         text-decoration: underline;
     }
 
