@@ -507,7 +507,6 @@ $( document ).ready(function() {
         // active anchor
         var clickedAnchor = $('.anchor.active').attr("href");
 
-        //var allImagesTemp = allImages.images;
         var allImagesTemp = getImagesFromCategory(clickedAnchor);
         var numberOfimagesToShowOnLoadmoreTemp = allImages.numberOfimagesToShowOnLoadmore;
 
