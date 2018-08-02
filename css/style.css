@@ -2057,6 +2057,7 @@ h1.title.title-section {
         padding: 0;
         margin-top: 60px;
         display: block;
+        text-align: left;
     }
 
     #footer .footer-content-bottom a {
@@ -2809,6 +2810,7 @@ h1.title.title-section {
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
+        text-align: left;
     }
 
     #footer .footer-content-bottom a {
@@ -3570,6 +3572,7 @@ h1.title.title-section {
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
+        text-align: left;
     }
 
     #footer .footer-content-bottom a {
