@@ -645,45 +645,95 @@ h1.title.title-section {
 
 #footer {
     background-color: #000;
-    font-size: 15px;
-    color: #fafafa;
-    letter-spacing: 0;
-    line-height: 22px;
-    font-weight: 400;
-    font-style: normal;
     margin-top: 100px;
     padding: 0px;
 }
 
 #footer .footer-container {
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #footer .footer-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#footer .footer-content ul li {
+    color: #fafafa;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+#footer .footer-content ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+#footer .footer-content ul li a:hover {
+    text-decoration: underline;
 }
 
 #footer .footer-content .footer-content-title {
+    margin: 0;
+    padding: 0;
     font-size: 15px;
+    color:#fafafa;
     letter-spacing: 2.1px;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 #footer .footer-content .footer-content-sections {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+#footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
+    display: block;
+}
+
+#footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
     display: none;
 }
 
-#footer .footer-content .footer-content-timetables {
-    display: none;
+#footer .footer-content .footer-content-sections ul {
+    padding: 0;
+    margin-top: 16px;
+    list-style-type: none;
 }
 
 #footer .footer-content-bottom {
-    display: none;
+    padding: 0;
+    margin-top: 24px;
+    text-align: center;
+}
+
+#footer .footer-content-bottom a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 17px;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 .modal-backdrop {
@@ -1175,6 +1225,95 @@ h1.title.title-section {
 
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
+    }
+
+    #footer {
+        margin-top: 200px;
+        padding: 0px;
+    }
+
+    #footer .footer-container {
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #footer .footer-content {
+        max-width: 1440px;
+        padding-left: 34px;
+        padding-right: 34px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footer .footer-content ul li {
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+
+    #footer .footer-content ul li a {
+        text-decoration: none;
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+
+    #footer .footer-content ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #footer .footer-content .footer-content-title {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        letter-spacing: 2.1px;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    #footer .footer-content .footer-content-sections {
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
+        display: none;
+    }
+
+    #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
+        display: block;
+    }
+
+    #footer .footer-content .footer-content-sections ul {
+        padding: 0;
+        margin-top: 16px;
+        list-style-type: none;
+    }
+
+    #footer .footer-content-bottom {
+        padding: 0;
+        margin-top: 60px;
+        display: block;
+    }
+
+    #footer .footer-content-bottom a {
+        text-decoration: none;
+        color: #c0c0c0;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 17px;
+        margin-right: 20px;
     }
 
     .modal-backdrop {
@@ -1843,29 +1982,31 @@ h1.title.title-section {
     }
 
     #footer {
-        background-color: #000;
-        height: 375px;
-        font-size: 16px;
-        color: #fafafa;
-        letter-spacing: 0;
-        line-height: 22px;
-        font-weight: 400;
-        font-style: normal;
         margin-top: 200px;
         padding: 0px;
     }
 
     #footer .footer-container {
         padding: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     #footer .footer-content {
         max-width: 1440px;
         padding-left: 34px;
         padding-right: 34px;
-        padding-top: 60px;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    #footer .footer-content ul li {
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a {
@@ -1873,9 +2014,9 @@ h1.title.title-section {
         color: #fafafa;
         font-weight: 400;
         font-style: normal;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a:hover {
@@ -1896,6 +2037,13 @@ h1.title.title-section {
     #footer .footer-content .footer-content-sections {
         margin: 0;
         padding: 0;
+    }
+
+    #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
+        display: none;
+    }
+
+    #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
         display: block;
     }
 
@@ -1903,12 +2051,6 @@ h1.title.title-section {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
-    }
-
-    #footer .footer-content .footer-content-timetables {
-        margin: 0;
-        padding: 0;
-        display: block;
     }
 
     #footer .footer-content-bottom {
@@ -1919,12 +2061,12 @@ h1.title.title-section {
 
     #footer .footer-content-bottom a {
         text-decoration: none;
-        color: #fafafa;
+        color: #c0c0c0;
         font-weight: 400;
         font-style: normal;
         font-size: 11px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 17px;
         margin-right: 20px;
     }
 
@@ -2593,25 +2735,31 @@ h1.title.title-section {
     }
 
     #footer {
-        background-color: #000;
-        height: 375px;
-        font-size: 16px;
-        color: #fafafa;
-        letter-spacing: 0;
-        line-height: 22px;
-        font-weight: 400;
-        font-style: normal;
         margin-top: 200px;
         padding: 0px;
     }
 
+    #footer .footer-container {
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     #footer .footer-content {
         width: 940px;
-        padding-top: 60px;
         padding-left: 0px;
         padding-right: 0px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #footer .footer-content ul li {
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a {
@@ -2619,9 +2767,9 @@ h1.title.title-section {
         color: #fafafa;
         font-weight: 400;
         font-style: normal;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a:hover {
@@ -2632,11 +2780,11 @@ h1.title.title-section {
         margin: 0;
         padding: 0;
         font-size: 15px;
+        color:#fafafa;
         letter-spacing: 2.1px;
         font-weight: 700;
         font-style: normal;
         text-transform: uppercase;
-        text-align: left;
     }
 
     #footer .footer-content .footer-content-sections {
@@ -2644,15 +2792,18 @@ h1.title.title-section {
         padding: 0;
     }
 
+    #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
+        display: block;
+    }
+
+    #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
+        display: none;
+    }
+
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
-    }
-
-    #footer .footer-content .footer-content-timetables {
-        margin: 0;
-        padding: 0;
     }
 
     #footer .footer-content-bottom {
@@ -2662,12 +2813,12 @@ h1.title.title-section {
 
     #footer .footer-content-bottom a {
         text-decoration: none;
-        color: #fafafa;
+        color: #c0c0c0;
         font-weight: 400;
         font-style: normal;
         font-size: 11px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 17px;
         margin-right: 20px;
     }
 
@@ -3345,25 +3496,31 @@ h1.title.title-section {
     }
 
     #footer {
-        background-color: #000;
-        height: 375px;
-        font-size: 16px;
-        color: #fafafa;
-        letter-spacing: 0;
-        line-height: 22px;
-        font-weight: 400;
-        font-style: normal;
         margin-top: 200px;
         padding: 0px;
     }
 
+    #footer .footer-container {
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     #footer .footer-content {
         width: 940px;
-        padding-top: 60px;
         padding-left: 0px;
         padding-right: 0px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #footer .footer-content ul li {
+        color: #fafafa;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a {
@@ -3371,9 +3528,9 @@ h1.title.title-section {
         color: #fafafa;
         font-weight: 400;
         font-style: normal;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 20px;
     }
 
     #footer .footer-content ul li a:hover {
@@ -3384,11 +3541,11 @@ h1.title.title-section {
         margin: 0;
         padding: 0;
         font-size: 15px;
+        color:#fafafa;
         letter-spacing: 2.1px;
         font-weight: 700;
         font-style: normal;
         text-transform: uppercase;
-        text-align: left;
     }
 
     #footer .footer-content .footer-content-sections {
@@ -3396,15 +3553,18 @@ h1.title.title-section {
         padding: 0;
     }
 
+    #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
+        display: block;
+    }
+
+    #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
+        display: none;
+    }
+
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
-    }
-
-    #footer .footer-content .footer-content-timetables {
-        margin: 0;
-        padding: 0;
     }
 
     #footer .footer-content-bottom {
@@ -3414,12 +3574,12 @@ h1.title.title-section {
 
     #footer .footer-content-bottom a {
         text-decoration: none;
-        color: #fafafa;
+        color: #c0c0c0;
         font-weight: 400;
         font-style: normal;
         font-size: 11px;
         letter-spacing: 0;
-        line-height: 22px;
+        line-height: 17px;
         margin-right: 20px;
     }
 
