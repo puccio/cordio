@@ -93,7 +93,7 @@ $( document ).ready(function() {
                     "title": "Periferia romana",
                     "category": "#affreschi",
                     "year": "1959",
-                    "description": ""
+                    "description": "Il regalo che mi fece Giulietta Simionato per il mio matrimonio era una stampa rappresentante il Mar Mediterraneo, di un azzurro che al solo guardarlo risvegliava. Ciò che mi diede, dicendomi: “Ho scelto questo, perché la carta da parati del tuo appartamento è azzurra”, era un quadro di circa trenta centimetri per lato sul cui retro era stato annotato il titolo “Fiori a Selinunte” e in esso il mare, al centro di una grande cornice rettangolare bianca che lo circondava, esisteva come un universo interrotto. In una spiaggia che faceva percepire l'infinito, dei fiori gialli e viola che sembrava profumassero, erano illuminati dalla luce e risplendevano."
                 },
                 {
                     "src_low": "img/gallery/AF_94_Primavera.jpg",
@@ -472,7 +472,7 @@ $( document ).ready(function() {
                         }
                         
                         htmlImagesGallery += '\
-                        <div class=modal-painting-container-desc>' + image.description + '</div>">\
+                        <div class=modal-painting-container-desc><p>' + image.description + '</p></div>">\
                         <img class="col-md-12 painting-container-img" src="' + image.src_low + '">\
                     </a>\
                     <div class="col-md-12 painting-container-title">' + image.title + '</div>\
@@ -486,7 +486,7 @@ $( document ).ready(function() {
 
 
     // versione con soundcloud
-    //         htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true></iframe></div><div class=modal-painting-container-desc>' + image.description + '</div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
+    //         htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true></iframe></div><div class=modal-painting-container-desc><p>' + image.description + '</p></div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
 
 
     // populate the gallery
@@ -523,7 +523,7 @@ $( document ).ready(function() {
                             }
                             
                             newImages += '\
-                            <div class=modal-painting-container-desc>' + allImagesTemp[i].description + '</div>">\
+                            <div class=modal-painting-container-desc><p>' + allImagesTemp[i].description + '</p></div>">\
                             <img class="col-md-12 painting-container-img" src="' + allImagesTemp[i].src_low + '">\
                         </a>\
                         <div class="col-md-12 painting-container-title">' + allImagesTemp[i].title + '</div>\
