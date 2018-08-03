@@ -759,7 +759,6 @@ h1.title.title-section {
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
 .modal-open .modal {
     overflow-y: scroll;
-    margin-bottom: 60px;
 }
 
 .ekko-lightbox-container {
@@ -1338,7 +1337,6 @@ h1.title.title-section {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
-        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -2093,7 +2091,6 @@ h1.title.title-section {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
-        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -2846,7 +2843,6 @@ h1.title.title-section {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
-        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
@@ -3613,7 +3609,6 @@ h1.title.title-section {
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: visible;
-        margin-bottom: 60px;
     }
 
     .ekko-lightbox-container {
