@@ -1,12 +1,13 @@
-$( document ).ready(function() {
-    
-    // Implementare api rest che ritorni un JSON contenente un array di immagini con le relative proprietà
-    
-    // allImages = $.getJSON("http://urltest.com/api/getGallery", function(data) {
-    //     allImages = data;
-    // });
+// Implementare un servizio che ritorni un JSON contenente un array di immagini con le relative proprietà, esattamente come allImages.
+// allImages dichiarato sotto , staticamente , è solo un esempio.
 
-    // qui lo dichiaro statico
+// Esempio per collegarsi al servizio e scaricare il JSON
+// allImages = $.getJSON("http://urltest.com/api/getGallery", function(data) {
+//     allImages = data;
+// });
+
+$( document ).ready(function() {
+
     allImages = {
         "numberOfimagesToShow": 8,                  // definisce quante immagini mostrare al caricamento della pagina
         "numberOfimagesToShowOnLoadmore": 8,        // definisce quante immagini mostrare al loadmore
@@ -452,7 +453,7 @@ $( document ).ready(function() {
             ]
     };
 
-    // il numero di immagini corrente in gallery
+    // rappresenta il numero di immagini presenti in gallery
     numberOfImagesShowed = 0;
 
     var htmlImagesGallery = "";
@@ -480,14 +481,8 @@ $( document ).ready(function() {
                 </div>\
             </div>';
         
-        
         numberOfImagesShowed++;
     })
-
-
-    // versione con soundcloud
-    //         htmlImagesGallery += '<div class="grid-item painting-container"><div class="row"><a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div><div class=modal-painting-container-year>' + image.year + '</div><div class=modal-painting-container-audio><iframe width=100% scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476030742&color=%23ff5500&auto_play=true></iframe></div><div class=modal-painting-container-desc><p>' + image.description + '</p></div>"><img class="col-md-12 painting-container-img" src="' + image.src_low + '"></a><div class="col-md-12 painting-container-title">' + image.title + '</div><div class="col-md-12 painting-container-year">' + image.year + '</div></div></div>';
-
 
     // populate the gallery
     $( ".grid" ).append( htmlImagesGallery );
@@ -497,8 +492,6 @@ $( document ).ready(function() {
         $grid.masonry({
             itemSelector: '.grid-item',
             gutter: '.gutter-sizer'
-            // columnWidth: 25%,
-            // gutter: 20
         });
     });
 
@@ -507,7 +500,10 @@ $( document ).ready(function() {
         // active anchor
         var clickedAnchor = $('.anchor.active').attr("href");
 
+        // tutte le immagini della categoria cliccata
         var allImagesTemp = getImagesFromCategory(clickedAnchor);
+
+        // il numero di immagini da mostrare
         var numberOfimagesToShowOnLoadmoreTemp = allImages.numberOfimagesToShowOnLoadmore;
 
         for(var i = numberOfImagesShowed; i < allImagesTemp.length && numberOfimagesToShowOnLoadmoreTemp > 0; i++, numberOfimagesToShowOnLoadmoreTemp--) {
@@ -543,22 +539,12 @@ $( document ).ready(function() {
             numberOfImagesShowed++;
         }
 
-        // if all images are showed
+        // if all images are showed, I can hide the button showmore
         if( numberOfImagesShowed == allImagesTemp.length ) {
             $('.showmore').hide();
         }
 
         return false;
-    });
-
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-
-        $(this).ekkoLightbox({
-            alwaysShowClose: true,
-            showArrows: false
-        });
-
     });
 
     $("#gallery-page .anchors .anchor").click(function() {
@@ -587,8 +573,10 @@ $( document ).ready(function() {
             // tutte le immagini della categoria cliccata
             var allImagesTemp = getImagesFromCategory(clickedAnchor);
 
+            // il numero di immagini da mostrare
             var numberOfimagesToShow = allImages.numberOfimagesToShow;
 
+            // initializing
             numberOfImagesShowed = 0;
 
             for(var i = 0; i < allImagesTemp.length && i < numberOfimagesToShow; i++) {
@@ -637,6 +625,7 @@ $( document ).ready(function() {
         return false;
     });
 
+    // return an array that contains the images of category passed
     function getImagesFromCategory(clickedAnchor) {
         var allImagesFromCategory = [];
 
@@ -651,5 +640,16 @@ $( document ).ready(function() {
 
         return allImagesFromCategory;
     }
+
+    // lightbox configuration: http://ashleydw.github.io/lightbox/
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+
+        $(this).ekkoLightbox({
+            alwaysShowClose: true,
+            showArrows: false
+        });
+
+    });
 
 });
