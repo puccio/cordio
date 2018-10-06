@@ -4,14 +4,29 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
+/* centered columns styles */
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
 .row {
     margin: 0;
 }
 
 img {
-    background-color:#d8d8d8;
+    background-color: #d8d8d8;
 }
-    
+
 h1 {
     font-weight: 700;
     font-style: normal;
@@ -79,7 +94,7 @@ h1.title.title-section {
     padding-right: 20px !important;
     padding-top: 14px;
     padding-bottom: 14px;
-    box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
+    box-shadow: 0 2px 0 0 rgba(224, 224, 224, 0.50);
 }
 
 .navbar .navbar-nav.navbar-nav-smallest {
@@ -183,14 +198,15 @@ h1.title.title-section {
     letter-spacing: 0;
     text-align: center;
     width: 100%;
-
     text-decoration: none;
-    color: #000;;
+    color: #000;
+    ;
 }
 
 .showmore:hover {
     text-decoration: underline;
-    color: #000;;
+    color: #000;
+    ;
 }
 
 .changepage {
@@ -200,7 +216,6 @@ h1.title.title-section {
     letter-spacing: 0;
     text-align: center;
     width: 100%;
-
     text-decoration: none;
     color: #000;
 }
@@ -208,6 +223,63 @@ h1.title.title-section {
 .changepage:hover {
     text-decoration: underline;
     color: #000;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #444;
+    color: white;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero-quote {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 27px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.50);
+    text-align: left;
+}
+
+.hero-author {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: right;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.50);
+}
+
+.gallery-home-thumbnail {
+    margin: 60px 0 80px 0;
+    text-decoration: none !important;
+    display: block;
+}
+
+.gallery-home-thumbnail > p {
+    font-size: 22px;
+    color: #1f1f1f;
+    letter-spacing: 0;
+    line-height: 15px;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
 #gallery {
@@ -237,7 +309,7 @@ h1.title.title-section {
 }
 
 #gallery .painting-container .row .painting-container-title {
-    font-weight: 600; 
+    font-weight: 600;
     font-style: normal;
     font-size: 14px;
     color: #1f1f1f;
@@ -322,11 +394,10 @@ h1.title.title-section {
     padding-right: 20px;
 }
 
-#biography .biography-container .biography-container-img {        
+#biography .biography-container .biography-container-img {
     width: 100%;
     height: auto;
     color: #666666;
-
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -339,7 +410,6 @@ h1.title.title-section {
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
-
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -348,9 +418,8 @@ h1.title.title-section {
 #biography .biography-container .biography-container-desc a.readmore {
     position: relative;
     top: 20px;
-    
     font-size: 18px;
-    color:#000;
+    color: #000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
@@ -359,9 +428,8 @@ h1.title.title-section {
 
 #biography .biography-container .biography-container-desc a.readmore:hover {
     text-decoration: underline;
-    color:#000;
+    color: #000;
 }
-
 
 #biography-page #biography .biography-container {
     padding-left: 20px;
@@ -384,7 +452,6 @@ h1.title.title-section {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 16px;
     color: #000000;
     letter-spacing: 0.2px;
@@ -452,7 +519,6 @@ h1.title.title-section {
     font-style: normal;
     letter-spacing: 0.3px;
     line-height: 18px;
-
     margin-top: 18px;
 }
 
@@ -466,11 +532,10 @@ h1.title.title-section {
     padding-right: 20px;
 }
 
-#littleones .littleones-container .littleones-container-img {        
+#littleones .littleones-container .littleones-container-img {
     width: 100%;
     height: auto;
     color: #666666;
-
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -483,7 +548,6 @@ h1.title.title-section {
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -491,9 +555,8 @@ h1.title.title-section {
 #littleones .littleones-container .littleones-container-desc a.readmore {
     position: relative;
     top: 20px;
-    
     font-size: 18px;
-    color:#000;
+    color: #000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
@@ -501,7 +564,7 @@ h1.title.title-section {
 }
 
 #littleones .littleones-container .littleones-container-desc a.readmore:hover {
-    color:#000;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -526,7 +589,6 @@ h1.title.title-section {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 16px;
     color: #000000;
     letter-spacing: 0.2px;
@@ -553,7 +615,6 @@ h1.title.title-section {
     width: 100%;
     height: auto;
     color: #666666;
-
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -566,7 +627,6 @@ h1.title.title-section {
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -574,9 +634,8 @@ h1.title.title-section {
 #witnesses .witnesses-container .witnesses-container-desc a.readmore {
     position: relative;
     top: 20px;
-
     font-size: 18px;
-    color:#000;
+    color: #000;
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
@@ -584,7 +643,7 @@ h1.title.title-section {
 }
 
 #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
-    color:#000;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -609,7 +668,6 @@ h1.title.title-section {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 16px;
     color: #000000;
     letter-spacing: 0.2px;
@@ -669,7 +727,7 @@ h1.title.title-section {
     margin: 0;
     padding: 0;
     font-size: 15px;
-    color:#fafafa;
+    color: #fafafa;
     letter-spacing: 2.1px;
     font-weight: 700;
     font-style: normal;
@@ -736,6 +794,7 @@ h1.title.title-section {
 }
 
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
+
 .modal-open .modal {
     overflow-y: scroll;
 }
@@ -817,12 +876,12 @@ h1.title.title-section {
     margin-bottom: 30px;
 }
 
-.modal-footer > :not(:first-child) {
+.modal-footer> :not(:first-child) {
     margin-left: 0;
     margin-right: 0;
 }
 
-.modal-footer > :not(:last-child) {
+.modal-footer> :not(:last-child) {
     margin-left: 0;
     margin-right: 0;
 }
@@ -838,7 +897,7 @@ h1.title.title-section {
 
 .modal-header .close span {
     margin-right: -3px;
-    position:relative;
+    position: relative;
     top: -10px;
 }
 
@@ -850,6 +909,7 @@ h1.title.title-section {
 }
 
 /* responsive iframe */
+
 .video-container {
     margin-left: 20px;
     margin-right: 20px;
@@ -868,48 +928,39 @@ h1.title.title-section {
 }
 
 @media (min-width: 576px) {
-
     .container {
         max-width: 768px;
     }
-
     .row {
         padding-left: 0;
         padding-right: 0;
         margin: 0;
     }
-
     .hr-full-width {
         display: none;
     }
-
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
     }
-    
     .navbar {
         padding-left: 20px !important;
         padding-right: 20px !important;
         padding-top: 14px;
         padding-bottom: 14px;
-        box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
+        box-shadow: 0 2px 0 0 rgba(224, 224, 224, 0.50);
     }
-    
     .navbar .navbar-nav.navbar-nav-smallest {
         display: block;
     }
-    
     .navbar .navbar-nav.navbar-nav-biggest {
         display: none;
     }
-    
     .navbar .navbar-toggler {
         outline: 0;
         border: 0;
         padding: 0;
     }
-    
     .navbar .navbar-toggler-icon {
         background-image: url("img/hamburger_menu_icon.svg");
         height: 12px;
@@ -917,7 +968,6 @@ h1.title.title-section {
         border: 0;
         outline: 0;
     }
-    
     .navbar .navbar-brand {
         display: inline-block;
         font-size: 15px;
@@ -928,7 +978,6 @@ h1.title.title-section {
         font-weight: 700;
         font-style: normal;
     }
-    
     .navbar .navbar-nav .nav-link {
         padding-right: 20px;
         padding-left: 0;
@@ -939,25 +988,20 @@ h1.title.title-section {
         font-style: normal;
         text-decoration: underline;
     }
-    
     .navbar-nav .nav-link:hover {
         color: #1f1f1f;
     }
-    
     .navbar-nav .nav-item:lastlast-child .nav-link {
         padding-right: 0;
     }
-    
     .navbar .navbar-nav .nav-link.disabled {
         text-decoration: none;
     }
-    
     .navbar .navbar-nav.navbar-nav-biggest .nav-item.language {
         margin-left: 40px;
         width: 50px;
         padding: 0;
     }
-    
     .navbar .navbar-nav.navbar-nav-biggest .nav-item.language a {
         text-decoration: none;
         margin: 0;
@@ -968,34 +1012,28 @@ h1.title.title-section {
         color: #1f1f1f;
         letter-spacing: -0.4px;
     }
-    
     .navbar .navbar-nav.navbar-nav-biggest .nav-item.sitemap {
         background-image: url("img/map_icon.svg");
         width: 20px;
         height: 20px;
     }
-    
     .navbar .navbar-nav.navbar-nav-smallest .nav-item a {
         color: rgba(0, 0, 0, 0.3);
         text-decoration: none;
     }
-    
     .navbar .navbar-nav.navbar-nav-smallest .dropdown-menu {
         border: 0;
         padding-left: 1rem;
     }
-    
     .navbar .navbar-nav.navbar-nav-biggest .dropdown-menu {
         min-width: 0;
         padding: 0.5rem;
     }
-
     #gallery {
         padding: 0;
         margin-left: 20px;
         margin-right: 20px;
     }
-
     #gallery .painting-container {
         width: calc(50% - 10px);
         background-color: #fff;
@@ -1004,50 +1042,41 @@ h1.title.title-section {
         margin-bottom: 40px;
         float: left;
     }
-
     #gallery .gutter-sizer {
         width: 20px;
     }
-
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
         height: 100%;
         object-fit: cover;
     }
-
     #biography {
         margin: 0;
         padding: 0;
     }
-
     #biography .biography-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #biography-page #biography .biography-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #biography-page #biography .biography-img-big {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #biography-page #biography .biography-img-small {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #biography-page #biography .biography-desc {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1055,40 +1084,32 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #biography-page #biography div:last-child .biography-desc {
         margin-bottom: 0px;
     }
-
     #news {
         margin: 0;
         padding: 0;
     }
-    
     #news .news-containers {
         margin-bottom: 60px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    
     #news .news-containers .news-container {
         height: 140px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #news .news-containers .news-container .news-container-left {
         margin-right: 19px;
     }
-    
     #news .news-containers .news-container .news-container-right {
         display: none;
     }
-    
     #news .news-containers .news-container .news-container-left .news-container-left-title {
         margin-bottom: 8px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title a {
         font-size: 22px;
         color: #1f1f1f;
@@ -1096,7 +1117,6 @@ h1.title.title-section {
         font-weight: 700;
         font-style: normal;
     }
-    
     #news .news-containers .news-container .news-container-left .news-container-left-desc {
         font-size: 14px;
         color: #666;
@@ -1106,7 +1126,6 @@ h1.title.title-section {
         letter-spacing: 0.3px;
         line-height: 18px;
     }
-    
     #news .news-containers .news-container .news-container-left .news-container-left-date {
         font-size: 14px;
         color: #666;
@@ -1115,42 +1134,34 @@ h1.title.title-section {
         font-style: normal;
         letter-spacing: 0.3px;
         line-height: 18px;
-    
         margin-top: 18px;
     }
-
     #littleones {
         margin: 0;
         padding: 0;
     }
-
     #littleones .littleones-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #littleones-page #littleones .littleones-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #littleones-page #littleones .littleones-img-big {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #littleones-page #littleones .littleones-img-small {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #littleones-page #littleones .littleones-desc {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1158,43 +1169,35 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #littleones-page #littleones div:last-child .littleones-desc {
         margin-bottom: 0px;
     }
-
     #witnesses {
         margin: 0;
         padding: 0;
     }
-
     #witnesses .witnesses-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #witnesses-page #witnesses .witnesses-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     #witnesses-page #witnesses .witnesses-img-big {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #witnesses-page #witnesses .witnesses-img-small {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-
     #witnesses-page #witnesses .witnesses-desc {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1202,22 +1205,18 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
     }
-
     #footer {
         margin-top: 200px;
         padding: 0px;
     }
-
     #footer .footer-container {
         padding: 0;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     #footer .footer-content {
         max-width: 1440px;
         padding-left: 34px;
@@ -1225,7 +1224,6 @@ h1.title.title-section {
         margin-left: 0;
         margin-right: 0;
     }
-
     #footer .footer-content ul li {
         color: #fafafa;
         font-weight: 400;
@@ -1234,7 +1232,6 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a {
         text-decoration: none;
         color: #fafafa;
@@ -1244,11 +1241,9 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a:hover {
         text-decoration: underline;
     }
-
     #footer .footer-content .footer-content-title {
         margin: 0;
         padding: 0;
@@ -1259,32 +1254,26 @@ h1.title.title-section {
         text-transform: uppercase;
         text-align: left;
     }
-
     #footer .footer-content .footer-content-sections {
         margin: 0;
         padding: 0;
     }
-
     #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
         display: none;
     }
-
     #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
         display: block;
     }
-
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
     }
-
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
         display: block;
     }
-
     #footer .footer-content-bottom a {
         text-decoration: none;
         color: #c0c0c0;
@@ -1295,62 +1284,50 @@ h1.title.title-section {
         line-height: 17px;
         margin-right: 20px;
     }
-
     .modal-backdrop {
         background-color: #fff;
     }
-
     .modal-backdrop.fade {
         opacity: 0.95;
     }
-
     .modal {
         padding: 0 !important;
     }
-    
     .modal-dialog {
         max-width: 940px !important;
         margin-left: 20px !important;
         margin-right: 20px !important;
         margin-top: 90px !important;
     }
-
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
     }
-
     .ekko-lightbox-container {
         height: auto !important;
     }
-
     .ekko-lightbox-item {
         position: initial !important;
     }
-
     .modal-content {
         background-color: initial;
         border: 0;
     }
-
     .modal-header {
         border: 0;
         padding: 0;
         margin: 0;
         height: 70px;
     }
-
     .modal-body {
         border: 0;
         padding: 0;
     }
-
     .modal-footer {
         border: 0;
         padding: 0;
         display: initial;
     }
-
     .modal-footer .modal-painting-container-title {
         font-size: 20px;
         color: #030303;
@@ -1361,7 +1338,6 @@ h1.title.title-section {
         margin-top: 20px;
         line-height: initial;
     }
-
     .modal-footer .modal-painting-container-year {
         font-size: 16px;
         color: #1f1f1f;
@@ -1369,23 +1345,19 @@ h1.title.title-section {
         font-weight: 400;
         font-style: italic;
     }
-
     .modal-footer .modal-painting-container-audio {
         margin-top: 30px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     .modal-footer .modal-painting-container-audio audio {
         width: 100%;
     }
-
     .modal-footer .modal-painting-container-desc {
         width: 100%;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    
     .modal-footer .modal-painting-container-desc p {
         font-size: 14px;
         color: #666666;
@@ -1396,17 +1368,14 @@ h1.title.title-section {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
-    .modal-footer > :not(:first-child) {
+    .modal-footer> :not(:first-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
-    .modal-footer > :not(:last-child) {
+    .modal-footer> :not(:last-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
     .modal-header .close {
         float: right;
         font-size: 2.5rem;
@@ -1415,20 +1384,17 @@ h1.title.title-section {
         text-shadow: initial;
         outline: none;
     }
-    
     .modal-header .close span {
         margin-right: -3px;
-        position:relative;
+        position: relative;
         top: -10px;
     }
-
     .ekko-lightbox {
         display: initial;
         align-items: initial;
         justify-content: initial;
         padding-right: 0!important;
     }
-
     /* responsive iframe */
     .video-container {
         margin-left: 20px;
@@ -1437,7 +1403,6 @@ h1.title.title-section {
         overflow: hidden;
         padding-top: 56.25%;
     }
-
     .video-container .player {
         position: absolute;
         top: 0;
@@ -1449,7 +1414,6 @@ h1.title.title-section {
 }
 
 @media (min-width: 768px) {
-
     h1 {
         font-weight: 700;
         font-style: normal;
@@ -1463,7 +1427,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -1476,7 +1439,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -1486,52 +1448,42 @@ h1.title.title-section {
         margin-bottom: 60px;
         padding: 0;
     }
-
     h1.title.title-section {
         margin-top: 110px;
     }
-
     .container {
         max-width: 1440px;
     }
-
     .hr-full-width {
         display: none;
     }
-
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
     }
-
     .navbar {
         padding-left: 34px !important;
         padding-right: 34px !important;
         padding-top: 24px;
         padding-bottom: 24px;
-        box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
+        box-shadow: 0 2px 0 0 rgba(224, 224, 224, 0.50);
     }
-
     .navbar .navbar-nav.navbar-nav-smallest {
         display: block;
     }
-
     .navbar .navbar-nav.navbar-nav-biggest {
         display: none;
     }
-
     .row {
         padding-left: 0;
         padding-right: 0;
         margin: 0;
     }
-
     #gallery {
         padding: 0;
         margin-left: 34px;
         margin-right: 34px;
     }
-
     #gallery .painting-container {
         width: calc(33.3% - 13.3px);
         background-color: #fff;
@@ -1540,25 +1492,21 @@ h1.title.title-section {
         margin-bottom: 40px;
         float: left;
     }
-
     #gallery .gutter-sizer {
         width: 20px;
     }
-
     #gallery .painting-container .row {
         padding: 0;
         margin: 0;
     }
-
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
         height: 100%;
         object-fit: cover;
     }
-
     #gallery .painting-container .row .painting-container-title {
-        font-weight: 600; 
+        font-weight: 600;
         font-style: normal;
         font-size: 14px;
         color: #1f1f1f;
@@ -1568,7 +1516,6 @@ h1.title.title-section {
         margin: 0;
         margin-top: 10px;
     }
-
     #gallery .painting-container .row .painting-container-year {
         font-weight: 400;
         font-style: italic;
@@ -1580,11 +1527,9 @@ h1.title.title-section {
         margin: 0;
         margin-top: 5px;
     }
-
     #gallery-page h1 {
         margin-bottom: 0px;
     }
-
     #gallery-page h2 {
         font-weight: 400;
         font-style: normal;
@@ -1599,14 +1544,12 @@ h1.title.title-section {
         margin-left: auto;
         padding: 0;
     }
-
     #gallery-page .subtitle {
         padding: 0px;
         margin: 0px;
         margin-left: 34px;
         margin-right: 34px;
     }
-
     #gallery-page .anchors {
         padding: 0;
         margin-left: 34px;
@@ -1615,7 +1558,6 @@ h1.title.title-section {
         margin-bottom: 40px;
         text-align: center;
     }
-
     #gallery-page .anchors a.anchor {
         font-size: 22px;
         color: #c0c0c0;
@@ -1627,39 +1569,32 @@ h1.title.title-section {
         margin-left: 10px;
         margin-right: 10px;
     }
-
     #gallery-page .anchors a.anchor.active {
         text-decoration: underline;
         color: rgba(0, 0, 0, 0.9);
     }
-
     .showmore {
         margin-top: 20px;
     }
-
     .changepage {
         margin-top: 20px;
     }
-
     #biography {
         margin: 0;
         padding: 0;
     }
-
     #biography .biography-container {
         padding-left: 34px;
         padding-right: 34px;
     }
-
-    #biography .biography-container .biography-container-img {        
-        float: left; 
-        width: 340px; 
-        height: 210px; 
-        margin-right: 20px; 
+    #biography .biography-container .biography-container-img {
+        float: left;
+        width: 340px;
+        height: 210px;
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #biography .biography-container .biography-container-desc {
         font-size: 16px;
         color: #000000;
@@ -1667,30 +1602,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 700px; 
+        width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
-        color:#000;
+        color: #000;
     }
-
     #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
@@ -1699,7 +1629,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
@@ -1707,13 +1636,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1721,46 +1648,38 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #biography-page #biography div:last-child .biography-desc {
         margin-bottom: 0px;
     }
-
     #news {
         margin: 0;
         padding: 0;
     }
-
     #news .news-containers {
         padding: 0;
         margin-bottom: 60px;
     }
-
     #news .news-containers .news-container {
         width: 620px;
         height: 140px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #news .news-containers .news-container .news-container-left {
         float: left;
         width: 461px;
         margin-right: 19px;
     }
-
     #news .news-containers .news-container .news-container-right {
         display: block;
         float: left;
         width: 140px;
         height: 140px;
-        background-color:#d8d8d8;
+        background-color: #d8d8d8;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title {
         margin-bottom: 8px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title a {
         font-size: 22px;
         color: #1f1f1f;
@@ -1768,7 +1687,6 @@ h1.title.title-section {
         font-weight: 700;
         font-style: normal;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-desc {
         font-size: 14px;
         color: #666;
@@ -1778,7 +1696,6 @@ h1.title.title-section {
         letter-spacing: 0.3px;
         line-height: 18px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-date {
         font-size: 14px;
         color: #666;
@@ -1787,30 +1704,25 @@ h1.title.title-section {
         font-style: normal;
         letter-spacing: 0.3px;
         line-height: 18px;
-
         position: absolute;
         bottom: 0px;
     }
-
     #littleones {
         margin: 0;
         padding: 0;
     }
-
     #littleones .littleones-container {
         padding-left: 34px;
         padding-right: 34px;
     }
-
-    #littleones .littleones-container .littleones-container-img {        
-        float: right; 
-        width: 340px; 
+    #littleones .littleones-container .littleones-container-img {
+        float: right;
+        width: 340px;
         height: 210px;
-        margin-left: 20px; 
+        margin-left: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #littleones .littleones-container .littleones-container-desc {
         font-size: 16px;
         color: #000000;
@@ -1818,30 +1730,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
         width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #littleones .littleones-container .littleones-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #littleones-page #littleones .littleones-img-big {
         display: block;
         width: 620px;
@@ -1850,7 +1757,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-img-small {
         display: block;
         width: 460px;
@@ -1858,13 +1764,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1872,30 +1776,25 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #littleones-page #littleones div:last-child .littleones-desc {
         margin-bottom: 0px;
     }
-
     #witnesses {
         margin: 0;
         padding: 0;
     }
-
     #witnesses .witnesses-container {
         padding-left: 34px;
         padding-right: 34px;
     }
-
-    #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
-        width: 340px; 
+    #witnesses .witnesses-container .witnesses-container-img {
+        float: left;
+        width: 340px;
         height: 210px;
-        margin-right: 20px; 
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc {
         font-size: 16px;
         color: #000000;
@@ -1903,30 +1802,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
         width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #witnesses-page #witnesses .witnesses-img-big {
         display: block;
         width: 620px;
@@ -1935,7 +1829,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-img-small {
         display: block;
         width: 460px;
@@ -1943,13 +1836,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -1957,22 +1848,18 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
     }
-
     #footer {
         margin-top: 200px;
         padding: 0px;
     }
-
     #footer .footer-container {
         padding: 0;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     #footer .footer-content {
         max-width: 1440px;
         padding-left: 34px;
@@ -1980,7 +1867,6 @@ h1.title.title-section {
         margin-left: 0;
         margin-right: 0;
     }
-
     #footer .footer-content ul li {
         color: #fafafa;
         font-weight: 400;
@@ -1989,7 +1875,6 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a {
         text-decoration: none;
         color: #fafafa;
@@ -1999,11 +1884,9 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a:hover {
         text-decoration: underline;
     }
-
     #footer .footer-content .footer-content-title {
         margin: 0;
         padding: 0;
@@ -2014,33 +1897,27 @@ h1.title.title-section {
         text-transform: uppercase;
         text-align: left;
     }
-
     #footer .footer-content .footer-content-sections {
         margin: 0;
         padding: 0;
     }
-
     #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
         display: none;
     }
-
     #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
         display: block;
     }
-
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
     }
-
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
         display: block;
         text-align: left;
     }
-
     #footer .footer-content-bottom a {
         text-decoration: none;
         color: #c0c0c0;
@@ -2051,62 +1928,50 @@ h1.title.title-section {
         line-height: 17px;
         margin-right: 20px;
     }
-
     .modal-backdrop {
         background-color: #fff;
     }
-
     .modal-backdrop.fade {
         opacity: 0.95;
     }
-
     .modal {
         padding: 0 !important;
     }
-    
     .modal-dialog {
         max-width: 940px !important;
         margin-left: 34px !important;
         margin-right: 34px !important;
         margin-top: 90px !important;
     }
-
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
     }
-
     .ekko-lightbox-container {
         height: auto !important;
     }
-
     .ekko-lightbox-item {
         position: initial !important;
     }
-
     .modal-content {
         background-color: initial;
         border: 0;
     }
-
     .modal-header {
         border: 0;
         padding: 0;
         margin: 0;
         height: 70px;
     }
-
     .modal-body {
         border: 0;
         padding: 0;
     }
-
     .modal-footer {
         border: 0;
         padding: 0;
         display: initial;
     }
-
     .modal-footer .modal-painting-container-title {
         font-size: 40px;
         color: #030303;
@@ -2117,7 +1982,6 @@ h1.title.title-section {
         margin-top: 30px;
         line-height: initial;
     }
-
     .modal-footer .modal-painting-container-year {
         font-size: 20px;
         color: #1f1f1f;
@@ -2125,24 +1989,20 @@ h1.title.title-section {
         font-weight: 400;
         font-style: italic;
     }
-
     .modal-footer .modal-painting-container-audio {
         margin-top: 60px;
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     .modal-footer .modal-painting-container-audio audio {
         width: 100%;
     }
-
     .modal-footer .modal-painting-container-desc {
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    
     .modal-footer .modal-painting-container-desc p {
         font-size: 14px;
         color: #666666;
@@ -2153,17 +2013,14 @@ h1.title.title-section {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-
-    .modal-footer > :not(:first-child) {
+    .modal-footer> :not(:first-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
-    .modal-footer > :not(:last-child) {
+    .modal-footer> :not(:last-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
     .modal-header .close {
         float: right;
         font-size: 2.5rem;
@@ -2172,20 +2029,17 @@ h1.title.title-section {
         text-shadow: initial;
         outline: none;
     }
-    
     .modal-header .close span {
         margin-right: -3px;
-        position:relative;
+        position: relative;
         top: -10px;
     }
-
     .ekko-lightbox {
         display: initial;
         align-items: initial;
         justify-content: initial;
         padding-right: 0!important;
     }
-
     /* responsive iframe */
     .video-container {
         margin-left: 20px;
@@ -2194,7 +2048,6 @@ h1.title.title-section {
         overflow: hidden;
         padding-top: 56.25%;
     }
-
     .video-container .player {
         position: absolute;
         top: 0;
@@ -2206,7 +2059,6 @@ h1.title.title-section {
 }
 
 @media (min-width: 992px) {
-
     h1 {
         font-weight: 700;
         font-style: normal;
@@ -2220,7 +2072,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -2233,7 +2084,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -2243,24 +2093,19 @@ h1.title.title-section {
         margin-bottom: 60px;
         padding: 0;
     }
-
     h1.title.title-section {
         margin-top: 140px;
     }
-
     .container {
         max-width: 1440px;
     }
-
     .hr-full-width {
         display: none;
     }
-
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
     }
-
     .navbar {
         max-width: 1440px;
         height: 80px;
@@ -2268,30 +2113,25 @@ h1.title.title-section {
         padding-right: 34px;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0 2px 0 0 rgba(224,224,224,0.50);
+        box-shadow: 0 2px 0 0 rgba(224, 224, 224, 0.50);
     }
-
     .navbar .navbar-nav.navbar-nav-smallest {
         display: none;
     }
-
     .navbar .navbar-nav.navbar-nav-biggest {
         display: block;
     }
-
     .row {
         padding-left: 34px;
         padding-right: 34px;
         margin: 0;
     }
-
     #gallery {
         padding: 0;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 40px;
     }
-
     #gallery .painting-container {
         width: calc(25% - 15px);
         background-color: #fff;
@@ -2300,25 +2140,21 @@ h1.title.title-section {
         margin-bottom: 40px;
         float: left;
     }
-
     #gallery .gutter-sizer {
         width: 20px;
     }
-
     #gallery .painting-container .row {
         padding: 0;
         margin: 0;
     }
-
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
         height: 100%;
         object-fit: cover;
     }
-
     #gallery .painting-container .row .painting-container-title {
-        font-weight: 600; 
+        font-weight: 600;
         font-style: normal;
         font-size: 14px;
         color: #1f1f1f;
@@ -2328,7 +2164,6 @@ h1.title.title-section {
         margin: 0;
         margin-top: 10px;
     }
-
     #gallery .painting-container .row .painting-container-year {
         font-weight: 400;
         font-style: italic;
@@ -2340,11 +2175,9 @@ h1.title.title-section {
         margin: 0;
         margin-top: 5px;
     }
-
     #gallery-page h1 {
         margin-bottom: 0px;
     }
-
     #gallery-page h2 {
         font-weight: 400;
         font-style: normal;
@@ -2359,12 +2192,10 @@ h1.title.title-section {
         margin-left: auto;
         padding: 0;
     }
-
     #gallery-page .subtitle {
         padding: 0px;
         margin: 0px;
     }
-
     #gallery-page .anchors {
         padding: 0;
         margin-right: auto;
@@ -2373,7 +2204,6 @@ h1.title.title-section {
         margin-bottom: 40px;
         text-align: center;
     }
-
     #gallery-page .anchors a.anchor {
         font-size: 22px;
         color: #c0c0c0;
@@ -2385,38 +2215,31 @@ h1.title.title-section {
         margin-left: 10px;
         margin-right: 10px;
     }
-
     #gallery-page .anchors a.anchor.active {
         text-decoration: underline;
         color: rgba(0, 0, 0, 0.9);
     }
-
     .showmore {
         margin-top: 20px;
     }
-
     .changepage {
         margin-top: 20px;
     }
-
     #biography {
         margin: 0;
         padding: 0;
     }
-
     #biography .biography-container {
         padding: 0;
     }
-
-    #biography .biography-container .biography-container-img {        
-        float: left; 
-        width: 540px; 
-        height: 338px; 
-        margin-right: 20px; 
+    #biography .biography-container .biography-container-img {
+        float: left;
+        width: 540px;
+        height: 338px;
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #biography .biography-container .biography-container-desc {
         font-size: 16px;
         color: #000000;
@@ -2424,30 +2247,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
-        color:#000;
+        color: #000;
     }
-
     #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
@@ -2456,7 +2274,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
@@ -2464,13 +2281,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -2478,46 +2293,38 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #biography-page #biography div:last-child .biography-desc {
         margin-bottom: 0px;
     }
-
     #news {
         margin: 0;
         padding: 0;
     }
-
     #news .news-containers {
         padding: 0;
         margin-bottom: 60px;
     }
-
     #news .news-containers .news-container {
         width: 620px;
         height: 140px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #news .news-containers .news-container .news-container-left {
         float: left;
         width: 461px;
         margin-right: 19px;
     }
-
     #news .news-containers .news-container .news-container-right {
         display: block;
         float: left;
         width: 140px;
         height: 140px;
-        background-color:#d8d8d8;
+        background-color: #d8d8d8;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title {
         margin-bottom: 8px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title a {
         font-size: 22px;
         color: #1f1f1f;
@@ -2525,7 +2332,6 @@ h1.title.title-section {
         font-weight: 700;
         font-style: normal;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-desc {
         font-size: 14px;
         color: #666;
@@ -2535,7 +2341,6 @@ h1.title.title-section {
         letter-spacing: 0.3px;
         line-height: 18px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-date {
         font-size: 14px;
         color: #666;
@@ -2544,29 +2349,24 @@ h1.title.title-section {
         font-style: normal;
         letter-spacing: 0.3px;
         line-height: 18px;
-
         position: absolute;
         bottom: 0px;
     }
-
     #littleones {
         margin: 0;
         padding: 0;
     }
-
     #littleones .littleones-container {
         padding: 0;
     }
-
-    #littleones .littleones-container .littleones-container-img {        
-        float: right; 
-        width: 540px; 
-        height: 338px; 
-        margin-left: 20px; 
+    #littleones .littleones-container .littleones-container-img {
+        float: right;
+        width: 540px;
+        height: 338px;
+        margin-left: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #littleones .littleones-container .littleones-container-desc {
         font-size: 16px;
         color: #000000;
@@ -2574,30 +2374,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #littleones .littleones-container .littleones-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #littleones-page #littleones .littleones-img-big {
         display: block;
         width: 620px;
@@ -2606,7 +2401,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-img-small {
         display: block;
         width: 460px;
@@ -2614,13 +2408,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -2628,29 +2420,24 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #littleones-page #littleones div:last-child .littleones-desc {
         margin-bottom: 0px;
     }
-
     #witnesses {
         margin: 0;
         padding: 0;
     }
-
     #witnesses .witnesses-container {
         padding: 0;
     }
-
-    #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
-        width: 540px; 
-        height: 338px; 
-        margin-right: 20px; 
+    #witnesses .witnesses-container .witnesses-container-img {
+        float: left;
+        width: 540px;
+        height: 338px;
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc {
         font-size: 16px;
         color: #000000;
@@ -2658,30 +2445,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #witnesses-page #witnesses .witnesses-img-big {
         display: block;
         width: 620px;
@@ -2690,7 +2472,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-img-small {
         display: block;
         width: 460px;
@@ -2698,13 +2479,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -2712,22 +2491,18 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
     }
-
     #footer {
         margin-top: 200px;
         padding: 0px;
     }
-
     #footer .footer-container {
         padding: 0;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     #footer .footer-content {
         width: 940px;
         padding-left: 0px;
@@ -2735,7 +2510,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #footer .footer-content ul li {
         color: #fafafa;
         font-weight: 400;
@@ -2744,7 +2518,6 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a {
         text-decoration: none;
         color: #fafafa;
@@ -2754,47 +2527,39 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a:hover {
         text-decoration: underline;
     }
-
     #footer .footer-content .footer-content-title {
         margin: 0;
         padding: 0;
         font-size: 15px;
-        color:#fafafa;
+        color: #fafafa;
         letter-spacing: 2.1px;
         font-weight: 700;
         font-style: normal;
         text-transform: uppercase;
     }
-
     #footer .footer-content .footer-content-sections {
         margin: 0;
         padding: 0;
     }
-
     #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
         display: block;
     }
-
     #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
         display: none;
     }
-
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
     }
-
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
         text-align: left;
     }
-
     #footer .footer-content-bottom a {
         text-decoration: none;
         color: #c0c0c0;
@@ -2805,62 +2570,50 @@ h1.title.title-section {
         line-height: 17px;
         margin-right: 20px;
     }
-
     .modal-backdrop {
         background-color: #fff;
     }
-
     .modal-backdrop.fade {
         opacity: 0.95;
     }
-
     .modal {
         padding: 0 !important;
     }
-    
     .modal-dialog {
         max-width: 940px !important;
         margin-top: 90px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
     }
-
     .ekko-lightbox-container {
         height: auto !important;
     }
-
     .ekko-lightbox-item {
         position: initial !important;
     }
-
     .modal-content {
         background-color: initial;
         border: 0;
     }
-
     .modal-header {
         border: 0;
         padding: 0;
         margin: 0;
         height: 70px;
     }
-
     .modal-body {
         border: 0;
         padding: 0;
     }
-
     .modal-footer {
         border: 0;
         padding: 0;
         display: initial;
     }
-
     .modal-footer .modal-painting-container-title {
         font-size: 40px;
         color: #030303;
@@ -2871,7 +2624,6 @@ h1.title.title-section {
         margin-top: 30px;
         line-height: initial;
     }
-
     .modal-footer .modal-painting-container-year {
         font-size: 20px;
         color: #1f1f1f;
@@ -2879,24 +2631,20 @@ h1.title.title-section {
         font-weight: 400;
         font-style: italic;
     }
-
     .modal-footer .modal-painting-container-audio {
         margin-top: 60px;
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     .modal-footer .modal-painting-container-audio audio {
         width: 100%;
     }
-
     .modal-footer .modal-painting-container-desc {
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    
     .modal-footer .modal-painting-container-desc p {
         font-size: 14px;
         color: #666666;
@@ -2907,17 +2655,14 @@ h1.title.title-section {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-
-    .modal-footer > :not(:first-child) {
+    .modal-footer> :not(:first-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
-    .modal-footer > :not(:last-child) {
+    .modal-footer> :not(:last-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
     .modal-header .close {
         float: right;
         font-size: 2.5rem;
@@ -2926,20 +2671,17 @@ h1.title.title-section {
         text-shadow: initial;
         outline: none;
     }
-    
     .modal-header .close span {
         margin-right: -3px;
-        position:relative;
+        position: relative;
         top: -10px;
     }
-
     .ekko-lightbox {
         display: initial;
         align-items: initial;
         justify-content: initial;
         padding-right: 0!important;
     }
-
     .video-container {
         padding: 0;
         margin: 0;
@@ -2949,7 +2691,6 @@ h1.title.title-section {
         position: initial;
         overflow: initial;
     }
-
     .video-container .player {
         display: block;
         margin-left: auto;
@@ -2958,11 +2699,9 @@ h1.title.title-section {
         height: 360px;
         position: initial;
     }
-
 }
 
 @media (min-width: 1440px) {
-
     h1 {
         font-weight: 700;
         font-style: normal;
@@ -2976,7 +2715,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h2 {
         font-weight: 400;
         font-style: normal;
@@ -2989,7 +2727,6 @@ h1.title.title-section {
         margin-right: auto;
         margin-left: auto;
     }
-
     h1.title {
         font-size: 40px;
         color: #030303;
@@ -2999,15 +2736,12 @@ h1.title.title-section {
         margin-bottom: 60px;
         padding: 0;
     }
-
     h1.title.title-section {
         margin-top: 140px;
     }
-
     .container {
         max-width: 1440px;
     }
-
     .hr-full-width {
         display: block;
         margin: 0;
@@ -3015,12 +2749,10 @@ h1.title.title-section {
         top: 80px;
         width: 100%;
     }
-
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
     }
-
     .navbar {
         max-width: 1440px;
         height: 80px;
@@ -3030,26 +2762,21 @@ h1.title.title-section {
         margin-right: auto;
         box-shadow: none;
     }
-
     .navbar .navbar-nav.navbar-nav-smallest {
         display: none;
     }
-
     .navbar .navbar-nav.navbar-nav-biggest {
         display: block;
     }
-
     .row {
         padding-left: 250px;
         padding-right: 250px;
         margin: 0;
     }
-
     #gallery {
         padding: 0;
         margin-bottom: 40px;
     }
-
     #gallery .painting-container {
         width: calc(25% - 15px);
         background-color: #fff;
@@ -3058,25 +2785,21 @@ h1.title.title-section {
         margin-bottom: 40px;
         float: left;
     }
-
     #gallery .gutter-sizer {
         width: 20px;
     }
-
     #gallery .painting-container .row {
         padding: 0;
         margin: 0;
     }
-
     #gallery .painting-container .row .painting-container-img {
         padding: 0;
         margin: 0;
         height: 100%;
         object-fit: cover;
     }
-
     #gallery .painting-container .row .painting-container-title {
-        font-weight: 600; 
+        font-weight: 600;
         font-style: normal;
         font-size: 14px;
         color: #1f1f1f;
@@ -3086,7 +2809,6 @@ h1.title.title-section {
         margin: 0;
         margin-top: 10px;
     }
-
     #gallery .painting-container .row .painting-container-year {
         font-weight: 400;
         font-style: italic;
@@ -3098,11 +2820,9 @@ h1.title.title-section {
         margin: 0;
         margin-top: 5px;
     }
-
     #gallery-page h1 {
         margin-bottom: 0px;
     }
-
     #gallery-page h2 {
         font-weight: 400;
         font-style: normal;
@@ -3117,12 +2837,10 @@ h1.title.title-section {
         margin-left: auto;
         padding: 0;
     }
-
     #gallery-page .subtitle {
         padding: 0px;
         margin: 0px;
     }
-
     #gallery-page .anchors {
         padding: 0;
         margin-right: auto;
@@ -3131,7 +2849,6 @@ h1.title.title-section {
         margin-bottom: 40px;
         text-align: center;
     }
-
     #gallery-page .anchors a.anchor {
         font-size: 22px;
         color: #c0c0c0;
@@ -3143,38 +2860,31 @@ h1.title.title-section {
         margin-left: 10px;
         margin-right: 10px;
     }
-
     #gallery-page .anchors a.anchor.active {
         text-decoration: underline;
         color: rgba(0, 0, 0, 0.9);
     }
-
     .showmore {
         margin-top: 20px;
     }
-
     .changepage {
         margin-top: 20px;
     }
-
     #biography {
         margin: 0;
         padding: 0;
     }
-
     #biography .biography-container {
         padding: 0;
     }
-
-    #biography .biography-container .biography-container-img {        
-        float: left; 
-        width: 540px; 
-        height: 338px; 
-        margin-right: 20px; 
+    #biography .biography-container .biography-container-img {
+        float: left;
+        width: 540px;
+        height: 338px;
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #biography .biography-container .biography-container-desc {
         font-size: 16px;
         color: #000000;
@@ -3182,30 +2892,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography .biography-container .biography-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #biography .biography-container .biography-container-desc a.readmore:hover {
         text-decoration: underline;
-        color:#000;
+        color: #000;
     }
-
     #biography-page #biography .biography-img-big {
         display: block;
         width: 620px;
@@ -3214,7 +2919,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-img-small {
         display: block;
         width: 460px;
@@ -3222,13 +2926,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #biography-page #biography .biography-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -3236,46 +2938,38 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #biography-page #biography div:last-child .biography-desc {
         margin-bottom: 0px;
     }
-
     #news {
         margin: 0;
         padding: 0;
     }
-
     #news .news-containers {
         padding: 0;
         margin-bottom: 60px;
     }
-
     #news .news-containers .news-container {
         width: 620px;
         height: 140px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #news .news-containers .news-container .news-container-left {
         float: left;
         width: 461px;
         margin-right: 19px;
     }
-
     #news .news-containers .news-container .news-container-right {
         display: block;
         float: left;
         width: 140px;
         height: 140px;
-        background-color:#d8d8d8;
+        background-color: #d8d8d8;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title {
         margin-bottom: 8px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-title a {
         font-size: 22px;
         color: #1f1f1f;
@@ -3284,7 +2978,6 @@ h1.title.title-section {
         font-style: normal;
         margin-bottom: 8px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-desc {
         font-size: 14px;
         color: #666;
@@ -3294,7 +2987,6 @@ h1.title.title-section {
         letter-spacing: 0.3px;
         line-height: 18px;
     }
-
     #news .news-containers .news-container .news-container-left .news-container-left-date {
         font-size: 14px;
         color: #666;
@@ -3303,33 +2995,27 @@ h1.title.title-section {
         font-style: normal;
         letter-spacing: 0.3px;
         line-height: 18px;
-
         position: absolute;
         bottom: 0px;
     }
-
     #news .showmore {
         margin-top: 0px;
     }
-
     #littleones {
         margin: 0;
         padding: 0;
     }
-
     #littleones .littleones-container {
         padding: 0;
     }
-
-    #littleones .littleones-container .littleones-container-img {        
-        float: right; 
-        width: 540px; 
-        height: 338px; 
-        margin-left: 20px; 
+    #littleones .littleones-container .littleones-container-img {
+        float: right;
+        width: 540px;
+        height: 338px;
+        margin-left: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #littleones .littleones-container .littleones-container-desc {
         font-size: 16px;
         color: #000000;
@@ -3337,30 +3023,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones .littleones-container .littleones-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #littleones .littleones-container .littleones-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #littleones-page #littleones .littleones-img-big {
         display: block;
         width: 620px;
@@ -3369,7 +3050,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-img-small {
         display: block;
         width: 460px;
@@ -3377,13 +3057,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #littleones-page #littleones .littleones-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -3391,29 +3069,24 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #littleones-page #littleones div:last-child .littleones-desc {
         margin-bottom: 0px;
     }
-
     #witnesses {
         margin: 0;
         padding: 0;
     }
-
     #witnesses .witnesses-container {
         padding: 0;
     }
-
-    #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
-        width: 540px; 
-        height: 338px; 
-        margin-right: 20px; 
+    #witnesses .witnesses-container .witnesses-container-img {
+        float: left;
+        width: 540px;
+        height: 338px;
+        margin-right: 20px;
         margin-bottom: 0px;
         color: #666666;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc {
         font-size: 16px;
         color: #000000;
@@ -3421,30 +3094,25 @@ h1.title.title-section {
         line-height: 24px;
         font-weight: 400;
         font-style: normal;
-
-        width: 940px; 
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses .witnesses-container .witnesses-container-desc a.readmore {
         position: absolute;
         bottom: 0px;
         top: initial;
-
         font-size: 18px;
-        color:#000;
+        color: #000;
         letter-spacing: 0;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
     }
-    
     #witnesses .witnesses-container .witnesses-container-desc a.readmore:hover {
-        color:#000;
+        color: #000;
         text-decoration: underline;
     }
-
     #witnesses-page #witnesses .witnesses-img-big {
         display: block;
         width: 620px;
@@ -3453,7 +3121,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-img-small {
         display: block;
         width: 460px;
@@ -3461,13 +3128,11 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #witnesses-page #witnesses .witnesses-desc {
         width: 620px;
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-
         font-size: 16px;
         color: #000000;
         letter-spacing: 0.2px;
@@ -3475,22 +3140,18 @@ h1.title.title-section {
         font-weight: 400;
         font-style: normal;
     }
-
     #witnesses-page #witnesses div:last-child .witnesses-desc {
         margin-bottom: 0px;
     }
-
     #footer {
         margin-top: 200px;
         padding: 0px;
     }
-
     #footer .footer-container {
         padding: 0;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     #footer .footer-content {
         width: 940px;
         padding-left: 0px;
@@ -3498,7 +3159,6 @@ h1.title.title-section {
         margin-left: auto;
         margin-right: auto;
     }
-
     #footer .footer-content ul li {
         color: #fafafa;
         font-weight: 400;
@@ -3507,7 +3167,6 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a {
         text-decoration: none;
         color: #fafafa;
@@ -3517,47 +3176,39 @@ h1.title.title-section {
         letter-spacing: 0;
         line-height: 20px;
     }
-
     #footer .footer-content ul li a:hover {
         text-decoration: underline;
     }
-
     #footer .footer-content .footer-content-title {
         margin: 0;
         padding: 0;
         font-size: 15px;
-        color:#fafafa;
+        color: #fafafa;
         letter-spacing: 2.1px;
         font-weight: 700;
         font-style: normal;
         text-transform: uppercase;
     }
-
     #footer .footer-content .footer-content-sections {
         margin: 0;
         padding: 0;
     }
-
     #footer .footer-content .footer-content-sections.footer-content-sections-hide-desktop {
         display: block;
     }
-
     #footer .footer-content .footer-content-sections .footer-content-sections-show-desktop {
         display: none;
     }
-
     #footer .footer-content .footer-content-sections ul {
         padding: 0;
         margin-top: 16px;
         list-style-type: none;
     }
-
     #footer .footer-content-bottom {
         padding: 0;
         margin-top: 60px;
         text-align: left;
     }
-
     #footer .footer-content-bottom a {
         text-decoration: none;
         color: #c0c0c0;
@@ -3568,67 +3219,54 @@ h1.title.title-section {
         line-height: 17px;
         margin-right: 20px;
     }
-
     .modal-backdrop {
         background-color: #fff;
     }
-
     .modal-backdrop.fade {
         opacity: 0.95;
     }
-
     .modal {
         padding: 0 !important;
     }
-    
     .modal-dialog {
         max-width: 940px !important;
         margin-top: 90px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     /* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
     .fixed-top {
         position: sticky;
     }
-
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: visible;
     }
-
     .ekko-lightbox-container {
         height: auto !important;
     }
-
     .ekko-lightbox-item {
         position: initial !important;
     }
-
     .modal-content {
         background-color: initial;
         border: 0;
     }
-
     .modal-header {
         border: 0;
         padding: 0;
         margin: 0;
         height: 70px;
     }
-
     .modal-body {
         border: 0;
         padding: 0;
     }
-
     .modal-footer {
         border: 0;
         padding: 0;
         display: initial;
     }
-
     .modal-footer .modal-painting-container-title {
         font-size: 40px;
         color: #030303;
@@ -3639,7 +3277,6 @@ h1.title.title-section {
         margin-top: 30px;
         line-height: initial;
     }
-
     .modal-footer .modal-painting-container-year {
         font-size: 20px;
         color: #1f1f1f;
@@ -3647,24 +3284,20 @@ h1.title.title-section {
         font-weight: 400;
         font-style: italic;
     }
-
     .modal-footer .modal-painting-container-audio {
         margin-top: 60px;
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     .modal-footer .modal-painting-container-audio audio {
         width: 100%;
     }
-
     .modal-footer .modal-painting-container-desc {
         width: 620px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    
     .modal-footer .modal-painting-container-desc p {
         font-size: 14px;
         color: #666666;
@@ -3675,17 +3308,14 @@ h1.title.title-section {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-
-    .modal-footer > :not(:first-child) {
+    .modal-footer> :not(:first-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
-    .modal-footer > :not(:last-child) {
+    .modal-footer> :not(:last-child) {
         margin-left: 0;
         margin-right: 0;
     }
-
     .modal-header .close {
         float: right;
         font-size: 2.5rem;
@@ -3694,26 +3324,22 @@ h1.title.title-section {
         text-shadow: initial;
         outline: none;
     }
-    
     .modal-header .close span {
         margin-right: -3px;
-        position:relative;
+        position: relative;
         top: -10px;
     }
-
     .ekko-lightbox {
         display: initial;
         align-items: initial;
         justify-content: initial;
         padding-right: 0!important;
     }
-
     .video-container {
         padding: 0;
         margin: 0;
         margin-bottom: 50px;
     }
-
     .video-container .player {
         display: block;
         margin-left: auto;
@@ -3721,5 +3347,4 @@ h1.title.title-section {
         width: 940px;
         height: 480px;
     }
-
 }
