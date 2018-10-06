@@ -49,6 +49,10 @@ h1.title {
     padding: 0;
 }
 
+h1.headline-light {
+    font-weight: 300;
+}
+
 h1.title.title-section {
     margin-top: 80px;
 }
