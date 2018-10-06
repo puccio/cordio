@@ -970,7 +970,7 @@ h1.title.title-section {
     }
     .navbar .navbar-brand {
         display: inline-block;
-        font-size: 15px;
+        font-size: 14px;
         line-height: inherit;
         white-space: nowrap;
         color: #1f1f1f;
@@ -981,7 +981,7 @@ h1.title.title-section {
     .navbar .navbar-nav .nav-link {
         padding-right: 20px;
         padding-left: 0;
-        font-size: 14px;
+        font-size: 13px;
         color: #1f1f1f;
         letter-spacing: -0.09px;
         font-weight: 700;
@@ -991,7 +991,7 @@ h1.title.title-section {
     .navbar-nav .nav-link:hover {
         color: #1f1f1f;
     }
-    .navbar-nav .nav-item:lastlast-child .nav-link {
+    .navbar-nav .nav-item:last-child .nav-link {
         padding-right: 0;
     }
     .navbar .navbar-nav .nav-link.disabled {
