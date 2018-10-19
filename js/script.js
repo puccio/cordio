@@ -457,34 +457,37 @@ $( document ).ready(function() {
     numberOfImagesShowed = 0;
 
     var htmlImagesGallery = "";
-    $.each(allImages.images, function(i, image) {
 
-        if(numberOfImagesShowed == allImages.numberOfimagesToShow) 
-            return;
+    if( !location.pathname.includes("index.html") ) {
+        $.each(allImages.images, function(i, image) {
 
-        htmlImagesGallery += '\
-            <div class="col-6 col-md-4 col-lg-3 painting-container">\
-                <div class="row painting-content">\
-                    <div class="col-md-12 painting-container-img">\
-                        <a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div>\
-                            <div class=modal-painting-container-year>' + image.year + '</div>';
+            if(numberOfImagesShowed == allImages.numberOfimagesToShow) 
+                return;
 
-                            if (image.src_audio !== "") {
-                                htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg></audio></div>';
-                            }
-                            
-                            htmlImagesGallery += '\
-                            <div class=modal-painting-container-desc><p>' + image.description + '</p></div>">\
-                            <img class="painting-container-img" src="' + image.src_low + '">\
-                        </a>\
+            htmlImagesGallery += '\
+                <div class="col-6 col-md-4 col-lg-3 painting-container">\
+                    <div class="row painting-content">\
+                        <div class="col-md-12 painting-container-img">\
+                            <a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div>\
+                                <div class=modal-painting-container-year>' + image.year + '</div>';
+
+                                if (image.src_audio !== "") {
+                                    htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg></audio></div>';
+                                }
+                                
+                                htmlImagesGallery += '\
+                                <div class=modal-painting-container-desc><p>' + image.description + '</p></div>">\
+                                <img class="painting-container-img" src="' + image.src_low + '">\
+                            </a>\
+                        </div>\
+                        <div class="col-md-12 painting-container-title">' + image.title + '</div>\
+                        <div class="col-md-12 painting-container-year">' + image.year + '</div>\
                     </div>\
-                    <div class="col-md-12 painting-container-title">' + image.title + '</div>\
-                    <div class="col-md-12 painting-container-year">' + image.year + '</div>\
-                </div>\
-            </div>';
+                </div>';
 
-        numberOfImagesShowed++;
-    })
+            numberOfImagesShowed++;
+        })
+    }
 
     // populate the gallery
     $( "#gallery" ).prepend( htmlImagesGallery );
@@ -613,6 +616,12 @@ $( document ).ready(function() {
 
         return false;
     });
+
+    if( window.location.hash && document.getElementById("gallery-page") ) {
+        if( $("#gallery-page .anchors .anchor:not('.active')") && $("#gallery-page .anchors .anchor").length > 0 ) {
+            $("#gallery-page .anchors .anchor[href='" + window.location.hash + "']").click();
+        }
+    }
 
     // return an array that contains the images of category passed
     function getImagesFromCategory(clickedAnchor) {

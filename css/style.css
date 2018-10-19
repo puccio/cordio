@@ -265,6 +265,25 @@ h1.title.title-section {
     margin-top: 5px;
 }
 
+#gallery .painting-container-filter {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#gallery .painting-container-filter a {
+    color: #1f1f1f;
+}
+
+#gallery .painting-container-filter a:hover {
+    text-decoration: none;
+}
+
 #gallery-page h1 {
     margin-bottom: 0px;
 }
@@ -1622,6 +1641,25 @@ h1.title.title-section {
         padding: 0;
         margin: 0;
         margin-top: 5px;
+    }
+
+    #gallery .painting-container-filter {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 15px;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #gallery .painting-container-filter a {
+        color: #1f1f1f;
+    }
+    
+    #gallery .painting-container-filter a:hover {
+        text-decoration: none;
     }
 
     #gallery-page h1 {
