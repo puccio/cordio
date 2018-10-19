@@ -463,37 +463,31 @@ $( document ).ready(function() {
             return;
 
         htmlImagesGallery += '\
-            <div class="grid-item painting-container">\
-                <div class="row">\
-                    <a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div>\
-                        <div class=modal-painting-container-year>' + image.year + '</div>';
+            <div class="col-6 col-md-4 col-lg-3 painting-container">\
+                <div class="row painting-content">\
+                    <div class="col-md-12 painting-container-img">\
+                        <a href="' + image.src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + image.title + '</div>\
+                            <div class=modal-painting-container-year>' + image.year + '</div>';
 
-                        if (image.src_audio !== "") {
-                            htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg></audio></div>';
-                        }
-                        
-                        htmlImagesGallery += '\
-                        <div class=modal-painting-container-desc><p>' + image.description + '</p></div>">\
-                        <img class="col-md-12 painting-container-img" src="' + image.src_low + '">\
-                    </a>\
+                            if (image.src_audio !== "") {
+                                htmlImagesGallery += '<div class=modal-painting-container-audio><audio controls><source src=' + image.src_audio + ' type=audio/mpeg></audio></div>';
+                            }
+                            
+                            htmlImagesGallery += '\
+                            <div class=modal-painting-container-desc><p>' + image.description + '</p></div>">\
+                            <img class="painting-container-img" src="' + image.src_low + '">\
+                        </a>\
+                    </div>\
                     <div class="col-md-12 painting-container-title">' + image.title + '</div>\
                     <div class="col-md-12 painting-container-year">' + image.year + '</div>\
                 </div>\
             </div>';
-        
+
         numberOfImagesShowed++;
     })
 
     // populate the gallery
-    $( ".grid" ).append( htmlImagesGallery );
-
-    // init Masonry gallery
-    $grid = $('.grid').imagesLoaded( function() {
-        $grid.masonry({
-            itemSelector: '.grid-item',
-            gutter: '.gutter-sizer'
-        });
-    });
+    $( "#gallery" ).prepend( htmlImagesGallery );
 
     $("#gallery-page .showmore").on('click', function() {
 
@@ -509,31 +503,28 @@ $( document ).ready(function() {
         for(var i = numberOfImagesShowed; i < allImagesTemp.length && numberOfimagesToShowOnLoadmoreTemp > 0; i++, numberOfimagesToShowOnLoadmoreTemp--) {
             
             var newImages = '\
-                <div class="grid-item painting-container">\
-                    <div class="row">\
-                        <a href="' + allImagesTemp[i].src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + allImagesTemp[i].title + '</div>\
-                            <div class=modal-painting-container-year>' + allImagesTemp[i].year + '</div>';
+                <div class="col-6 col-md-4 col-lg-3 painting-container">\
+                    <div class="row painting-content">\
+                        <div class="col-md-12 painting-container-img">\
+                            <a href="' + allImagesTemp[i].src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + allImagesTemp[i].title + '</div>\
+                                <div class=modal-painting-container-year>' + allImagesTemp[i].year + '</div>';
 
-                            if (allImagesTemp[i].src_audio !== "") {
-                                newImages += '<div class=modal-painting-container-audio><audio controls><source src=' + allImagesTemp[i].src_audio + ' type=audio/mpeg>Your browser does not support the audio element.</audio></div>';
-                            }
-                            
-                            newImages += '\
-                            <div class=modal-painting-container-desc><p>' + allImagesTemp[i].description + '</p></div>">\
-                            <img class="col-md-12 painting-container-img" src="' + allImagesTemp[i].src_low + '">\
-                        </a>\
+                                if (allImagesTemp[i].src_audio !== "") {
+                                    newImages += '<div class=modal-painting-container-audio><audio controls><source src=' + allImagesTemp[i].src_audio + ' type=audio/mpeg></audio></div>';
+                                }
+                                
+                                newImages += '\
+                                <div class=modal-painting-container-desc><p>' + allImagesTemp[i].description + '</p></div>">\
+                                <img class="painting-container-img" src="' + allImagesTemp[i].src_low + '">\
+                            </a>\
+                        </div>\
                         <div class="col-md-12 painting-container-title">' + allImagesTemp[i].title + '</div>\
                         <div class="col-md-12 painting-container-year">' + allImagesTemp[i].year + '</div>\
                     </div>\
                 </div>';
-
-            newImages = $(newImages);
-        
-            // from string to jquery object
-            var $newImages = $(newImages);
-
+            
             // appending new images
-            $grid.append(newImages).masonry('appended', newImages);
+            $("#gallery .painting-container").last().after( newImages );
 
             // update the field
             numberOfImagesShowed++;
@@ -562,7 +553,8 @@ $( document ).ready(function() {
             $('.showmore').show();
 
             // all images of the gallery
-            var oldImages = $('.grid-item');
+            // var oldImages = $('.grid-item');
+            var oldImages = $('#gallery .painting-container');
 
             // disabled all anchors link filters
             $("#gallery-page .anchors .anchor").removeClass("active");
@@ -582,38 +574,35 @@ $( document ).ready(function() {
             for(var i = 0; i < allImagesTemp.length && i < numberOfimagesToShow; i++) {
 
                 var newImages = '\
-                    <div class="grid-item painting-container">\
-                        <div class="row">\
-                            <a href="' + allImagesTemp[i].src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + allImagesTemp[i].title + '</div>\
-                                <div class=modal-painting-container-year>' + allImagesTemp[i].year + '</div>';
+                    <div class="col-6 col-md-4 col-lg-3 painting-container">\
+                        <div class="row painting-content">\
+                            <div class="col-md-12 painting-container-img">\
+                                <a href="' + allImagesTemp[i].src_high + '" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<div class=modal-painting-container-title>' + allImagesTemp[i].title + '</div>\
+                                    <div class=modal-painting-container-year>' + allImagesTemp[i].year + '</div>';
 
-                                if (allImagesTemp[i].src_audio !== "") {
-                                    newImages += '<div class=modal-painting-container-audio><audio controls><source src=' + allImagesTemp[i].src_audio + ' type=audio/mpeg>Your browser does not support the audio element.</audio></div>';
-                                }
-                                
-                                newImages += '\
-                                <div class=modal-painting-container-desc>' + allImagesTemp[i].description + '</div>">\
-                                <img class="col-md-12 painting-container-img" src="' + allImagesTemp[i].src_low + '">\
-                            </a>\
+                                    if (allImagesTemp[i].src_audio !== "") {
+                                        newImages += '<div class=modal-painting-container-audio><audio controls><source src=' + allImagesTemp[i].src_audio + ' type=audio/mpeg></audio></div>';
+                                    }
+                                    
+                                    newImages += '\
+                                    <div class=modal-painting-container-desc><p>' + allImagesTemp[i].description + '</p></div>">\
+                                    <img class="painting-container-img" src="' + allImagesTemp[i].src_low + '">\
+                                </a>\
+                            </div>\
                             <div class="col-md-12 painting-container-title">' + allImagesTemp[i].title + '</div>\
                             <div class="col-md-12 painting-container-year">' + allImagesTemp[i].year + '</div>\
                         </div>\
                     </div>';
 
-                newImages = $(newImages);
-            
-                // from string to jquery object
-                var $newImages = $(newImages);
-
                 // appending new images
-                $grid.append(newImages).masonry('appended', newImages);
+                $("#gallery .painting-container").last().after( newImages );
 
                 // update the field
                 numberOfImagesShowed++;
             }
 
             // removing old images
-            $grid.masonry('remove', $(oldImages)).masonry('layout');
+            oldImages.remove();
 
             // if all images are showed
             if( numberOfImagesShowed == allImagesTemp.length ) {
