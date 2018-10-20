@@ -58,7 +58,7 @@ h1 {
     letter-spacing: 0;
     text-align: center;
     width: 287px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1557,7 +1557,7 @@ h1.title.title-section {
         text-align: center;
         line-height: 78px;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 40px;
         width: 672px;
         margin-right: auto;
         margin-left: auto;
@@ -1603,6 +1603,12 @@ h1.title.title-section {
         position: relative;
         text-align: center;
         margin-top: 80px;
+        height: 465px;
+        overflow: hidden;
+    }
+    
+    #hero-container .hero-img {
+        width: 100%;
     }
     
     #hero-container .hero-text {
@@ -2367,7 +2373,7 @@ h1.title.title-section {
         letter-spacing: 0;
         text-align: center;
         line-height: 78px;
-        margin-top: 120px;
+        margin-top: 80px;
         width: 672px;
         margin-right: auto;
         margin-left: auto;
@@ -2411,6 +2417,12 @@ h1.title.title-section {
     #hero-container {
         position: relative;
         text-align: center;
+        height: 465px;
+        overflow: hidden;
+    }
+    
+    #hero-container .hero-img {
+        width: 100%;
     }
     
     #hero-container .hero-text {
@@ -3160,7 +3172,7 @@ h1.title.title-section {
         letter-spacing: 0;
         text-align: center;
         line-height: 78px;
-        margin-top: 120px;
+        margin-top: 80px;
         width: 672px;
         margin-right: auto;
         margin-left: auto;
@@ -3210,6 +3222,12 @@ h1.title.title-section {
         position: relative;
         text-align: center;
         margin-top: 0;
+        height: 650px;
+        overflow: hidden;
+    }
+    
+    #hero-container .hero-img {
+        width: 100%;
     }
     
     #hero-container .hero-text {
