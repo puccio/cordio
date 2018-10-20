@@ -60,7 +60,7 @@ h1 {
 h2 {
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
     color: #1f1f1f;
     letter-spacing: 0;
     text-align: center;
@@ -791,9 +791,7 @@ h1.title.title-section {
     margin-top: 90px !important;
 }
 
-.fixed-top {
-    position: sticky;
-}
+
 
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
 .modal-open .modal {
@@ -1561,7 +1559,7 @@ h1.title.title-section {
     h2 {
         font-weight: 400;
         font-style: normal;
-        font-size: 34px;
+        font-size: 25px;
         color: #1f1f1f;
         letter-spacing: 0;
         text-align: center;
