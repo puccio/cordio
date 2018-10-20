@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+/* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
+.fixed-top {
+    position: sticky;
+}
+
 img {
     background-color:#d8d8d8;
 }
