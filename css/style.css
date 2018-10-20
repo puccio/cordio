@@ -8,11 +8,6 @@
     margin: 0;
 }
 
-/* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
-.fixed-top {
-    position: sticky;
-}
-
 img {
     background-color:#d8d8d8;
 }
@@ -20,6 +15,7 @@ img {
 #hero-container {
     position: relative;
     text-align: center;
+    margin-top: 60px;
 }
 
 #hero-container .hero-img {
@@ -1599,6 +1595,7 @@ h1.title.title-section {
     #hero-container {
         position: relative;
         text-align: center;
+        margin-top: 80px;
     }
     
     #hero-container .hero-text {
