@@ -21,7 +21,7 @@ img {
     position: relative;
     text-align: center;
     margin-top: 60px;
-    height: 375px;
+    max-height: 375px;
     overflow: hidden;
 }
 
@@ -1606,7 +1606,7 @@ h1.title.title-section {
         position: relative;
         text-align: center;
         margin-top: 80px;
-        height: 465px;
+        max-height: 465px;
         overflow: hidden;
     }
     
@@ -2421,7 +2421,7 @@ h1.title.title-section {
     #hero-container {
         position: relative;
         text-align: center;
-        height: 650px;
+        max-height: 650px;
         overflow: hidden;
     }
     
@@ -3227,6 +3227,7 @@ h1.title.title-section {
         position: relative;
         text-align: center;
         margin-top: 0;
+        max-height: 900px;
         overflow: hidden;
     }
     
