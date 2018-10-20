@@ -21,9 +21,12 @@ img {
     position: relative;
     text-align: center;
     margin-top: 60px;
+    height: 375px;
+    overflow: hidden;
 }
 
 #hero-container .hero-img {
+    content: url('../img/hero_cordio_mobile.jpg');
     width: 100%;
 }
 
