@@ -11,12 +11,44 @@
 img {
     background-color:#d8d8d8;
 }
-    
-h1 {
+
+#hero-container {
+    position: relative;
+    text-align: center;
+}
+
+#hero-container .hero-img {
+    width: 100%;
+}
+
+#hero-container .hero-text {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0;
+    width: 288px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero-container .hero-text .hero-text-sign {
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
-    color: 030303;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 0;
+    float: right;
+    margin-top: 20px;
+}
+    
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    color: #030303;
     letter-spacing: 0;
     text-align: center;
     width: 287px;
@@ -757,6 +789,10 @@ h1.title.title-section {
     margin-left: 20px !important;
     margin-right: 20px !important;
     margin-top: 90px !important;
+}
+
+.fixed-top {
+    position: sticky;
 }
 
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
@@ -1508,9 +1544,9 @@ h1.title.title-section {
 @media (min-width: 768px) {
 
     h1 {
-        font-weight: 700;
+        font-weight: 300;
         font-style: normal;
-        font-size: 70px;
+        font-size: 45px;
         color: #030303;
         letter-spacing: 0;
         text-align: center;
@@ -1554,6 +1590,34 @@ h1.title.title-section {
 
     .hr-full-width {
         display: none;
+    }
+
+    #hero-container {
+        position: relative;
+        text-align: center;
+    }
+    
+    #hero-container .hero-text {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0;
+        width: 340px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-container .hero-text .hero-text-sign {
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0;
+        float: right;
+        margin-top: 20px;
     }
 
     .navbar.bg-light {
@@ -2289,9 +2353,9 @@ h1.title.title-section {
 @media (min-width: 992px) {
 
     h1 {
-        font-weight: 700;
+        font-weight: 300;
         font-style: normal;
-        font-size: 70px;
+        font-size: 60px;
         color: #030303;
         letter-spacing: 0;
         text-align: center;
@@ -2335,6 +2399,34 @@ h1.title.title-section {
 
     .hr-full-width {
         display: none;
+    }
+
+    #hero-container {
+        position: relative;
+        text-align: center;
+    }
+    
+    #hero-container .hero-text {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 27px;
+        color: #fff;
+        letter-spacing: 0;
+        width: 460px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-container .hero-text .hero-text-sign {
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0;
+        float: right;
+        margin-top: 20px;
     }
 
     .navbar.bg-light {
@@ -3049,9 +3141,9 @@ h1.title.title-section {
 @media (min-width: 1440px) {
 
     h1 {
-        font-weight: 700;
+        font-weight: 300;
         font-style: normal;
-        font-size: 70px;
+        font-size: 60px;
         color: #030303;
         letter-spacing: 0;
         text-align: center;
@@ -3099,6 +3191,34 @@ h1.title.title-section {
         position: fixed;
         top: 80px;
         width: 100%;
+    }
+
+    #hero-container {
+        position: relative;
+        text-align: center;
+    }
+    
+    #hero-container .hero-text {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 27px;
+        color: #fff;
+        letter-spacing: 0;
+        width: 460px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-container .hero-text .hero-text-sign {
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0;
+        float: right;
+        margin-top: 20px;
     }
 
     .navbar.bg-light {
