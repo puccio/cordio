@@ -3240,6 +3240,12 @@ h1.title.title-section {
         opacity: 0.98;
     }
 
+    .navbar-container {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+    }
+
     .navbar {
         max-width: 1440px;
         height: 80px;
