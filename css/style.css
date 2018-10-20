@@ -3008,6 +3008,12 @@ h1.title.title-section {
         margin-right: auto !important;
     }
 
+    /* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
+    .fixed-top {
+        max-height: initial;
+        overflow: initial;
+    }
+
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
     .modal-open .modal {
         overflow-y: scroll;
@@ -3203,6 +3209,7 @@ h1.title.title-section {
     #hero-container {
         position: relative;
         text-align: center;
+        margin-top: 0;
     }
     
     #hero-container .hero-text {
@@ -3807,6 +3814,8 @@ h1.title.title-section {
     /* per fixare il diallinemento tra modal e navbar quando questo viene aperto */
     .fixed-top {
         position: sticky;
+        max-height: initial;
+        overflow: initial;
     }
 
     /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
