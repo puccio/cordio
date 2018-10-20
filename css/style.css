@@ -1611,6 +1611,7 @@ h1.title.title-section {
     }
     
     #hero-container .hero-img {
+        content: url('../img/hero_cordio.jpg');
         width: 100%;
     }
     
@@ -2425,6 +2426,7 @@ h1.title.title-section {
     }
     
     #hero-container .hero-img {
+        content: url('../img/hero_cordio.jpg');
         width: 100%;
     }
     
@@ -3230,6 +3232,7 @@ h1.title.title-section {
     }
     
     #hero-container .hero-img {
+        content: url('../img/hero_cordio.jpg');
         width: 100%;
     }
     
