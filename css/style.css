@@ -4,6 +4,79 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.accordion .card {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.accordion .card:first-child {
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.accordion .card .card-header {
+    background: #fff;
+    border: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: initial;
+}
+
+.accordion .card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accordion .card .card-header h5 button {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    color: #1f1f1f;
+    width: 100%; 
+    text-align: left;
+}
+
+.accordion .card .card-header h5 button svg {
+    float: right;
+    fill: #c0c0c0;
+}
+
+
+
+
+
+
+
+
 .fixed-top {
     max-height: 100vh;
     overflow: auto;
@@ -802,8 +875,6 @@ h1.title.title-section {
     margin-top: 90px !important;
 }
 
-
-
 /* per evitare che se la pagina sotto al modal ha lo scroll, e il modal no, non cambiano i calcoli sui margini */
 .modal-open .modal {
     overflow-y: scroll;
@@ -950,6 +1021,13 @@ h1.title.title-section {
 
     .hr-full-width {
         display: none;
+    }
+
+    .accordion {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
     }
 
     .navbar.bg-light {
@@ -1600,6 +1678,13 @@ h1.title.title-section {
 
     .hr-full-width {
         display: none;
+    }
+
+    .accordion {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 
     #hero-container {
@@ -2418,6 +2503,13 @@ h1.title.title-section {
         display: none;
     }
 
+    .accordion {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
     #hero-container {
         position: relative;
         text-align: center;
@@ -3223,6 +3315,13 @@ h1.title.title-section {
         width: 100%;
     }
 
+    .accordion {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
     #hero-container {
         position: relative;
         text-align: center;
@@ -3651,7 +3750,8 @@ h1.title.title-section {
 
     #witnesses {
         margin: 0;
-        padding: 0;
+        padding-left: 250px;
+        padding-right: 250px;
     }
 
     #witnesses .witnesses-container {

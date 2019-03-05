@@ -11,7 +11,26 @@ $( document ).ready(function() {
     allImages = {
         "numberOfimagesToShow": 8,                  // definisce quante immagini mostrare al caricamento della pagina
         "numberOfimagesToShowOnLoadmore": 8,        // definisce quante immagini mostrare al loadmore
-        "images":   
+        "text": 
+            [
+                 {
+					"description": "Sono su affreschi",
+                    "category": "#affreschi"
+                 },
+                 {
+					"description": "Sono su disegni",
+                    "category": "#disegni"
+                 },
+                 {
+					"description": "Sono su incisioni",
+                    "category": "#incisioni"
+                 },
+                 {
+					"description": "Sono su sculture",
+                    "category": "#sculture"
+                 }
+            ],
+        "images":
             [
                 {
                     "src_low": "img/gallery/IN_59_Periferia-romana.jpg",
@@ -555,6 +574,10 @@ $( document ).ready(function() {
             // show showmore button
             $('.showmore').show();
 
+            // hide collapsed text
+            $('.accordion .collapse').collapse("hide");
+            $('.accordion svg').css("transform", "initial");
+
             // all images of the gallery
             // var oldImages = $('.grid-item');
             var oldImages = $('#gallery .painting-container');
@@ -612,6 +635,9 @@ $( document ).ready(function() {
                 $('.showmore').hide();
             }
 
+            // show collapsed description if exist
+            $('.card-body').text(getTextFromCategory(clickedAnchor));
+
         }
 
         return false;
@@ -639,6 +665,15 @@ $( document ).ready(function() {
         return allImagesFromCategory;
     }
 
+    // return text of category passed
+    function getTextFromCategory(clickedAnchor) {
+        for(var i = 0; i < allImages.text.length; i++) {
+            if (allImages.text[i].category === clickedAnchor) {
+                return allImages.text[i].description;
+            }
+        }
+    }
+
     // lightbox configuration: http://ashleydw.github.io/lightbox/
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
@@ -649,5 +684,17 @@ $( document ).ready(function() {
         });
 
     });
+
+    $('#accordionExample .card button').on('click', function () {
+        var flag = false;
+        if($(this).children('svg').css("transform") != "none") {
+            flag = true;
+        }
+        $('svg').css("transform", "initial");
+        
+        if(!flag) {
+            $(this).children('svg').css("transform", "rotate(180deg)");
+        }
+    })
 
 });
