@@ -65,6 +65,7 @@
     color: #1f1f1f;
     width: 100%; 
     text-align: left;
+    white-space: normal;
 }
 
 .accordion .card .card-header h5 button svg {
