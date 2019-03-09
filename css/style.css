@@ -13,7 +13,9 @@
 
 
 
-
+#gallery-page .accordion {
+    display: none;
+}
 
 .accordion {
     width: 100%;
