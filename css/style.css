@@ -4,15 +4,6 @@
     src: url(https://fonts.gstatic.com/l/font?kit=jizGREVItHgc8qDIbSTKq4XkRiUa4_oyq1v7AtqBx6SXI9XqT8p1_PWoWyLRocujo2w6XE7kHaSumunNbcLS6ujjWUsFAhTXtR2Fx8z4tlsn62BaRrr3e7kTWH7QV5dKMTHhkNu3XaTXOAvPc_ZWlNtnGBSjEBNF-0TwN0vXF2jM8T8tecpmzO_zWpUMtqQd_asJz0aidYXDahoLZ1TT6VAYqt_jYd8&skey=6c65792cc3381596&v=v2) format('woff2');
 }
 
-
-
-
-
-
-
-
-
-
 #gallery-page .accordion {
     display: none;
 }
@@ -72,13 +63,6 @@
     float: right;
     fill: #c0c0c0;
 }
-
-
-
-
-
-
-
 
 .fixed-top {
     max-height: 100vh;
@@ -657,12 +641,14 @@ h1.title.title-section {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
+    background: none;
 }
 
 #littleones-page #littleones .littleones-img-small {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
+    background: none;
 }
 
 #littleones-page #littleones .littleones-desc {
