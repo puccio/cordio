@@ -755,6 +755,91 @@ h1.title.title-section {
     margin-bottom: 0px;
 }
 
+#premio {
+    margin: 0;
+    padding: 0;
+}
+
+#premio .premio-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#premio .premio-container .premio-container-img {        
+    width: 100%;
+    height: auto;
+    color: #666666;
+
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#premio .premio-container .premio-container-desc {
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#premio .premio-container .premio-container-desc a.readmore {
+    position: relative;
+    top: 20px;
+    
+    font-size: 18px;
+    color:#000;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#premio .premio-container .premio-container-desc a.readmore:hover {
+    color:#000;
+    text-decoration: underline;
+}
+
+#premio-page #premio .premio-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#premio-page #premio .premio-img-big {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    background: none;
+}
+
+#premio-page #premio .premio-img-small {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    background: none;
+}
+
+#premio-page #premio .premio-desc {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#premio-page #premio div:last-child .premio-desc {
+    margin-bottom: 0px;
+}
+
 #footer {
     background-color: #000;
     margin-top: 100px;
@@ -1374,6 +1459,50 @@ h1.title.title-section {
     }
 
     #witnesses-page #witnesses div:last-child .witnesses-desc {
+        margin-bottom: 0px;
+    }
+
+    #premio {
+        margin: 0;
+        padding: 0;
+    }
+
+    #premio .premio-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #premio-page #premio .premio-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #premio-page #premio .premio-img-big {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #premio-page #premio .premio-img-small {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #premio-page #premio .premio-desc {
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #premio-page #premio div:last-child .premio-desc {
         margin-bottom: 0px;
     }
 
@@ -2204,6 +2333,91 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #premio {
+        margin: 0;
+        padding: 0;
+    }
+
+    #premio .premio-container {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    #premio .premio-container .premio-container-img {        
+        float: right; 
+        width: 340px; 
+        height: 210px;
+        margin-left: 20px; 
+        margin-bottom: 0px;
+        color: #666666;
+    }
+
+    #premio .premio-container .premio-container-desc {
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio .premio-container .premio-container-desc a.readmore {
+        position: absolute;
+        bottom: 0px;
+        top: initial;
+
+        font-size: 18px;
+        color:#000;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+    }
+    
+    #premio .premio-container .premio-container-desc a.readmore:hover {
+        color:#000;
+        text-decoration: underline;
+    }
+
+    #premio-page #premio .premio-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #premio-page #premio div:last-child .premio-desc {
+        margin-bottom: 0px;
+    }
+
     #footer {
         margin-top: 200px;
         padding: 0px;
@@ -3005,6 +3219,90 @@ h1.title.title-section {
     }
 
     #witnesses-page #witnesses div:last-child .witnesses-desc {
+        margin-bottom: 0px;
+    }
+
+    #premio {
+        margin: 0;
+        padding: 0;
+    }
+
+    #premio .premio-container {
+        padding: 0;
+    }
+
+    #premio .premio-container .premio-container-img {        
+        float: right; 
+        width: 540px; 
+        height: 338px; 
+        margin-left: 20px; 
+        margin-bottom: 0px;
+        color: #666666;
+    }
+
+    #premio .premio-container .premio-container-desc {
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+
+        width: 940px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio .premio-container .premio-container-desc a.readmore {
+        position: absolute;
+        bottom: 0px;
+        top: initial;
+
+        font-size: 18px;
+        color:#000;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+    }
+    
+    #premio .premio-container .premio-container-desc a.readmore:hover {
+        color:#000;
+        text-decoration: underline;
+    }
+
+    #premio-page #premio .premio-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #premio-page #premio div:last-child .premio-desc {
         margin-bottom: 0px;
     }
 
@@ -3836,6 +4134,90 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #premio {
+        margin: 0;
+        padding: 0;
+    }
+
+    #premio .premio-container {
+        padding: 0;
+    }
+
+    #premio .premio-container .premio-container-img {        
+        float: right; 
+        width: 540px; 
+        height: 338px; 
+        margin-left: 20px; 
+        margin-bottom: 0px;
+        color: #666666;
+    }
+
+    #premio .premio-container .premio-container-desc {
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+
+        width: 940px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio .premio-container .premio-container-desc a.readmore {
+        position: absolute;
+        bottom: 0px;
+        top: initial;
+
+        font-size: 18px;
+        color:#000;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+    }
+    
+    #premio .premio-container .premio-container-desc a.readmore:hover {
+        color:#000;
+        text-decoration: underline;
+    }
+
+    #premio-page #premio .premio-img-big {
+        display: block;
+        width: 620px;
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-img-small {
+        display: block;
+        width: 460px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #premio-page #premio .premio-desc {
+        width: 620px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #premio-page #premio div:last-child .premio-desc {
+        margin-bottom: 0px;
+    }
+    
     #footer {
         margin-top: 200px;
         padding: 0px;
