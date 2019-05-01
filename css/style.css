@@ -74,7 +74,7 @@
 }
 
 img {
-    background-color:#d8d8d8;
+    background-color: transparent;
 }
 
 #hero-container {
@@ -460,10 +460,10 @@ h1.title.title-section {
 }
 
 #biography .biography-container .biography-container-desc {
-    font-size: 16px;
-    color: #000000;
+    font-size: 14px;
+    color: #666;
     letter-spacing: 0.2px;
-    line-height: 24px;
+    line-height: 19px;
     font-weight: 400;
     font-style: normal;
 
@@ -666,6 +666,10 @@ h1.title.title-section {
 
 #littleones-page #littleones div:last-child .littleones-desc {
     margin-bottom: 0px;
+}
+
+#video .video-container {
+    margin-bottom: 0;
 }
 
 #witnesses {
@@ -1325,6 +1329,10 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #video .video-container {
+        margin-bottom: 0;
+    }
+
     #witnesses {
         margin: 0;
         padding: 0;
@@ -1891,10 +1899,10 @@ h1.title.title-section {
     }
 
     #biography .biography-container .biography-container-desc {
-        font-size: 16px;
-        color: #000000;
+        font-size: 14px;
+        color: #666;
         letter-spacing: 0.2px;
-        line-height: 24px;
+        line-height: 19px;
         font-weight: 400;
         font-style: normal;
 
@@ -2107,6 +2115,10 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #video .video-container {
+        margin-bottom: 0;
+    }
+
     #witnesses {
         margin: 0;
         padding: 0;
@@ -2118,7 +2130,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 340px; 
         height: 210px;
         margin-right: 20px; 
@@ -2693,10 +2705,10 @@ h1.title.title-section {
     }
 
     #biography .biography-container .biography-container-desc {
-        font-size: 16px;
-        color: #000000;
+        font-size: 14px;
+        color: #666;
         letter-spacing: 0.2px;
-        line-height: 24px;
+        line-height: 19px;
         font-weight: 400;
         font-style: normal;
 
@@ -2908,6 +2920,10 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #video .video-container {
+        margin-bottom: 0;
+    }
+
     #witnesses {
         margin: 0;
         padding: 0;
@@ -2918,7 +2934,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 540px; 
         height: 338px; 
         margin-right: 20px; 
@@ -3511,10 +3527,10 @@ h1.title.title-section {
     }
 
     #biography .biography-container .biography-container-desc {
-        font-size: 16px;
-        color: #000000;
+        font-size: 14px;
+        color: #666;
         letter-spacing: 0.2px;
-        line-height: 24px;
+        line-height: 19px;
         font-weight: 400;
         font-style: normal;
 
@@ -3731,6 +3747,10 @@ h1.title.title-section {
         margin-bottom: 0px;
     }
 
+    #video .video-container {
+        margin-bottom: 0;
+    }
+
     #witnesses {
         margin: 0;
         padding-left: 250px;
@@ -3742,7 +3762,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 540px; 
         height: 338px; 
         margin-right: 20px; 
