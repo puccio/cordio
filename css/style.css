@@ -2130,7 +2130,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 340px; 
         height: 210px;
         margin-right: 20px; 
@@ -2934,7 +2934,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 540px; 
         height: 338px; 
         margin-right: 20px; 
@@ -3762,7 +3762,7 @@ h1.title.title-section {
     }
 
     #witnesses .witnesses-container .witnesses-container-img {        
-        float: left; 
+        float: right; 
         width: 540px; 
         height: 338px; 
         margin-right: 20px; 
