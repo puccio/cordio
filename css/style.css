@@ -80,7 +80,7 @@ img {
 #hero-container {
     position: relative;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 0px;
     max-height: 375px;
     overflow: hidden;
 }
@@ -172,6 +172,10 @@ h1.title.title-section {
 .navbar.bg-light {
     background-color: #fff !important;
     opacity: 0.98;
+}
+
+.navbar-container {
+    display: none;
 }
 
 .navbar {
@@ -851,6 +855,7 @@ h1.title.title-section {
     padding-right: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: none;
 }
 
 #footer .footer-content {
@@ -1112,6 +1117,13 @@ h1.title.title-section {
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
+    }
+
+    .navbar-container {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        display: block;
     }
     
     .navbar {
@@ -1846,6 +1858,13 @@ h1.title.title-section {
     .navbar.bg-light {
         background-color: #fff !important;
         opacity: 0.98;
+    }
+
+    .navbar-container {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        display: block;
     }
 
     .navbar {
@@ -2759,6 +2778,13 @@ h1.title.title-section {
         opacity: 0.98;
     }
 
+    .navbar-container {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        display: block;
+    }
+
     .navbar {
         max-width: 1440px;
         height: 80px;
@@ -3664,6 +3690,7 @@ h1.title.title-section {
         width: 100%;
         background: #fff;
         margin: 0;
+        display: block;
     }
 
     .navbar {
